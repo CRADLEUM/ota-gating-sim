@@ -1,0 +1,28 @@
+# gating_sim.py writes into its own directory. The reference copies live in
+# expected/ and figures/, so the generated ones at the root stay untracked and
+# a local run never shows up as a dirty working tree.
+/results_v3.csv
+/crossover.png
+/drivers.png
+
+# verify.py runs in a temp dir by default; this covers --outdir used in-repo.
+verify-run/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# The paper itself does not belong here.
+*.tex
+*.pdf
+*.bib
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store

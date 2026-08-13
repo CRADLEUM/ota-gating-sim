@@ -1,0 +1,12 @@
+# Store text as LF, check out native. verify.py normalizes line endings before
+# comparing, so either checkout style reproduces.
+* text=auto
+
+*.py   text
+*.md   text
+*.csv  text
+*.log  text
+*.cff  text
+*.txt  text
+
+*.png  binary
