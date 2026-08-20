@@ -1,0 +1,8 @@
+# Verified reproducing the committed artifacts on:
+#   Python 3.12.10, numpy 2.4.6, matplotlib 3.11.0
+#
+# Lower bounds reflect the API actually used. numpy.random.default_rng needs 1.17
+# or later. If verify.py stops reproducing after an upgrade, the random stream
+# moved: pin to the versions above rather than accepting the new numbers.
+numpy>=1.17
+matplotlib>=3.3

@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use this simulation, please cite the paper it supports."
+title: "ota-gating-sim: within-window atomic completion model for OTA update delivery"
+abstract: >-
+  Discrete-time Monte Carlo simulation of over-the-air update delivery to
+  autonomous devices that alternate between operating in public space and
+  sitting stationary where they can install. Completion requires a single
+  stationary window long enough to transfer and install contiguously, which
+  makes window length an independent driver of the preferred delivery
+  architecture.
+type: software
+license: MIT
+version: "3.0"
+date-released: "2026-07-20"
+
+authors:
+  - family-names: Dunne
+    given-names: Jerad
+    affiliation: "University of Michigan-Flint"
+  - family-names: Uludag
+    given-names: Suleyman
+    affiliation: "University of Michigan-Flint"
+  - family-names: Bisgin
+    given-names: Halil
+    affiliation: "University of Michigan-Flint"
+
+keywords:
+  - over-the-air updates
+  - autonomous vehicles
+  - unmanned aerial vehicles
+  - fleet management
+  - monte carlo simulation
+
+# TODO on acceptance: add doi, conference dates, pages, and publisher, then
+# change the note below. Until then this records a submission, not a publication.
+preferred-citation:
+  type: conference-paper
+  title: >-
+    From OTA Delivery Fit to Currency Assurance: Mapping Update Architectures
+    and Responsibility for Public-Space Autonomous Devices
+  authors:
+    - family-names: Dunne
+      given-names: Jerad
+      affiliation: "University of Michigan-Flint"
+    - family-names: Uludag
+      given-names: Suleyman
+      affiliation: "University of Michigan-Flint"
+    - family-names: Bisgin
+      given-names: Halil
+      affiliation: "University of Michigan-Flint"
+  collection-title: >-
+    45th IEEE International Performance, Computing, and Communications
+    Conference (IPCCC)
+  year: 2026
+  notes: "Under review. Do not cite as published until acceptance is confirmed."

@@ -1,0 +1,41 @@
+WITHIN-WINDOW model. R=60, N=500, H=360, seed=20260705. Max std=0.025.
+
+[drone]  S   cen    gossip  depot
+        25  0.68   0.08    1.00
+        65  0.05   0.08    1.00
+       105  0.00   0.08    1.00
+       155  0.00   0.08    0.98
+   crossover S* (depot beats best gating-unaware by >0.15): 25
+
+[av]  S   cen    gossip  depot
+        25  0.89   0.22    0.94
+        65  0.72   0.23    0.91
+       105  0.53   0.23    0.87
+       155  0.33   0.22    0.82
+   crossover S* (depot beats best gating-unaware by >0.15): 55
+
+GATE-ISOLATION (drone, all rates fixed): crossover S* vs stationary-window mean:
+   window~ 20 min -> S*=15   (gap at S=105: +0.85)
+   window~ 40 min -> S*=15   (gap at S=105: +0.98)
+   window~ 60 min -> S*=25   (gap at S=105: +1.00)
+   window~ 90 min -> S*=35   (gap at S=105: +0.99)
+   window~120 min -> S*=35   (gap at S=105: +0.99)
+   window~160 min -> S*=35   (gap at S=105: +0.97)
+   window~200 min -> S*=45   (gap at S=105: +0.95)
+   window~260 min -> S*=45   (gap at S=105: +0.91)
+   window~320 min -> S*=55   (gap at S=105: +0.87)
+
+BACKHAUL (drone, window fixed): crossover S* vs dock backhaul:
+   backhaul 0.10 -> S*=15
+   backhaul 0.25 -> S*=25
+   backhaul 0.40 -> S*=35
+   backhaul 0.55 -> S*=45
+   backhaul 0.70 -> S*=55
+   backhaul 0.85 -> S*=65
+   backhaul 1.00 -> S*=75
+   backhaul 1.15 -> S*=75
+   backhaul 1.30 -> S*=85
+   backhaul 1.45 -> S*=95
+   backhaul 1.60 -> S*=105
+
+wrote results_v2.csv, crossover.png, drivers.png

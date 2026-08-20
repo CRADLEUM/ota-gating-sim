@@ -1,0 +1,69 @@
+WITHIN-WINDOW model. R=60, N=500, H=360, seed=20260705. Max std=0.023.
+
+[drone]  S   cen    gossip  depot
+        25  0.70   0.08    1.00
+        65  0.05   0.08    1.00
+       105  0.00   0.08    1.00
+       155  0.00   0.08    0.98
+   crossover S* (depot beats best gating-unaware by >0.15): 25
+
+[av]  S   cen    gossip  depot
+        25  0.84   0.22    0.89
+        65  0.69   0.21    0.86
+       105  0.51   0.21    0.83
+       155  0.33   0.21    0.78
+   crossover S* (depot beats best gating-unaware by >0.15): 65
+
+GATE-ISOLATION (drone, all rates fixed): crossover S* vs stationary-window mean:
+   window~ 20 min -> S*=15   (gap at S=105: +0.85)
+   window~ 40 min -> S*=15   (gap at S=105: +0.99)
+   window~ 60 min -> S*=25   (gap at S=105: +1.00)
+   window~ 90 min -> S*=35   (gap at S=105: +0.98)
+   window~120 min -> S*=35   (gap at S=105: +0.96)
+   window~160 min -> S*=45   (gap at S=105: +0.91)
+   window~200 min -> S*=45   (gap at S=105: +0.85)
+   window~260 min -> S*=55   (gap at S=105: +0.76)
+   window~320 min -> S*=55   (gap at S=105: +0.69)
+
+CLOSED-FORM CHECK (atomic model): renewal formula vs simulated means:
+   drone centralized: max |pred - sim| = 0.080
+   drone depot      : max |pred - sim| = 0.078
+   av    centralized: max |pred - sim| = 0.054
+   av    depot      : max |pred - sim| = 0.067
+   overall max deviation: 0.080
+
+RESUMABILITY (install always atomic): crossover S* vs resume fraction rho:
+   drone rho=0.00 -> S*=25
+   drone rho=0.25 -> S*=25
+   drone rho=0.50 -> S*=35
+   drone rho=0.75 -> S*=35
+   drone rho=1.00 -> S*=55
+   av    rho=0.00 -> S*=65
+   av    rho=0.25 -> S*=65
+   av    rho=0.50 -> S*=75
+   av    rho=0.75 -> S*=75
+   av    rho=1.00 -> S*=75
+
+GOSSIP CONTACT RATE (drone, S=105): completion vs contact rate beta:
+   beta=0.0015/min -> completion 0.08
+   beta=0.0030/min -> completion 0.13
+   beta=0.0060/min -> completion 0.29
+   beta=0.0100/min -> completion 0.62
+   beta=0.0140/min -> completion 0.86
+   beta=0.0200/min -> completion 0.98
+   beta=0.0300/min -> completion 1.00
+
+BACKHAUL (drone, window fixed): crossover S* vs dock backhaul:
+   backhaul 0.10 -> S*=15
+   backhaul 0.25 -> S*=25
+   backhaul 0.40 -> S*=35
+   backhaul 0.55 -> S*=45
+   backhaul 0.70 -> S*=55
+   backhaul 0.85 -> S*=65
+   backhaul 1.00 -> S*=75
+   backhaul 1.15 -> S*=85
+   backhaul 1.30 -> S*=95
+   backhaul 1.45 -> S*=105
+   backhaul 1.60 -> S*=115
+
+wrote results_v3.csv, crossover.png, drivers.png
