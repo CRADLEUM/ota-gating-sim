@@ -1,0 +1,10 @@
+region,fixed_tiles,fixed_tests,fixed_down_mbps_wmedian,mobile_tiles,mobile_tests,mobile_down_mbps_wmedian,ratio
+conus,1696869,17316353,372.1,469590,1664508,228.8,1.63
+chicago_metro,14885,257852,392.8,6609,27585,296.9,1.32
+cincinnati,6020,65603,368.5,1626,4939,378.5,0.97
+wichita,1941,16916,379.9,717,2125,274.7,1.38
+denver,5927,132420,476.3,2664,10954,290.9,1.64
+colorado_springs,2053,33549,466.1,778,2159,234.2,1.99
+castle_rock,506,7429,465.7,125,385,220.0,2.12
+san_francisco,554,55965,364.0,464,5093,270.6,1.35
+rural_proxy_wyoming,5859,36050,324.7,1351,2976,137.5,2.36

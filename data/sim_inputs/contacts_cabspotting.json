@@ -1,0 +1,21 @@
+{
+  "source": "CRAWDAD epfl/mobility (Cabspotting), doi:10.15783/C7J010",
+  "generated_utc": "2026-10-09T15:40:32+00:00",
+  "cabs": 536,
+  "days": 23.98,
+  "step_s": 30,
+  "max_gap_s": 300,
+  "mean_online_cabs_per_step": 327.3,
+  "beta_definition": "contacts per on-line node per minute; transmission on every contact",
+  "beta_per_min_daytime": {
+    "100m": 0.82158,
+    "300m": 2.94024,
+    "1000m": 7.91266
+  },
+  "beta_per_min_all_hours": {
+    "100m": 0.79527,
+    "300m": 2.82571,
+    "1000m": 7.74627
+  },
+  "histogram": "contacts_cabspotting.csv: range_m, duration_bin_start_s (bin covers [start, start + step_s); the last bin is overflow), events"
+}

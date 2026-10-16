@@ -1,0 +1,567 @@
+sweep,class,param,value,arch,metric,result
+transfer,drone,link_S0.42,cellular backhaul,137 Mbps,transfer_min,0.409
+transfer,drone,link_S0.42,cellular backhaul,137 Mbps,share_windows_ok,0.975
+transfer,drone,link_S0.42,"satellite, documented",118 Mbps,transfer_min,0.475
+transfer,drone,link_S0.42,"satellite, documented",118 Mbps,share_windows_ok,0.975
+transfer,drone,link_S0.42,"poor cellular, p10",28 Mbps,transfer_min,2.000
+transfer,drone,link_S0.42,"poor cellular, p10",28 Mbps,share_windows_ok,0.970
+transfer,drone,link_S0.42,"local staging, fixed",372 Mbps,transfer_min,0.151
+transfer,drone,link_S0.42,"local staging, fixed",372 Mbps,share_windows_ok,0.976
+transfer,drone,link_S0.42,"dock Ethernet, spec",1000 Mbps,transfer_min,0.056
+transfer,drone,link_S0.42,"dock Ethernet, spec",1000 Mbps,share_windows_ok,0.976
+transfer,drone,peer_S0.42,"UAV mesh radio, Doodle Labs",80 Mbps,transfer_min,0.700
+transfer,drone,peer_S0.42,"UAV mesh radio, Silvus",100 Mbps,transfer_min,0.560
+transfer,drone,link_S4,cellular backhaul,137 Mbps,transfer_min,3.893
+transfer,drone,link_S4,cellular backhaul,137 Mbps,share_windows_ok,0.962
+transfer,drone,link_S4,"satellite, documented",118 Mbps,transfer_min,4.520
+transfer,drone,link_S4,"satellite, documented",118 Mbps,share_windows_ok,0.959
+transfer,drone,link_S4,"poor cellular, p10",28 Mbps,transfer_min,19.048
+transfer,drone,link_S4,"poor cellular, p10",28 Mbps,share_windows_ok,0.874
+transfer,drone,link_S4,"local staging, fixed",372 Mbps,transfer_min,1.434
+transfer,drone,link_S4,"local staging, fixed",372 Mbps,share_windows_ok,0.972
+transfer,drone,link_S4,"dock Ethernet, spec",1000 Mbps,transfer_min,0.533
+transfer,drone,link_S4,"dock Ethernet, spec",1000 Mbps,share_windows_ok,0.974
+transfer,drone,peer_S4,"UAV mesh radio, Doodle Labs",80 Mbps,transfer_min,6.667
+transfer,drone,peer_S4,"UAV mesh radio, Silvus",100 Mbps,transfer_min,5.333
+transfer,av,link_S0.42,cellular backhaul,297 Mbps,transfer_min,0.189
+transfer,av,link_S0.42,cellular backhaul,297 Mbps,share_windows_ok,0.454
+transfer,av,link_S0.42,"satellite, documented",118 Mbps,transfer_min,0.475
+transfer,av,link_S0.42,"satellite, documented",118 Mbps,share_windows_ok,0.452
+transfer,av,link_S0.42,"poor cellular, p10",28 Mbps,transfer_min,2.000
+transfer,av,link_S0.42,"poor cellular, p10",28 Mbps,share_windows_ok,0.442
+transfer,av,link_S0.42,"local staging, fixed",372 Mbps,transfer_min,0.151
+transfer,av,link_S0.42,"local staging, fixed",372 Mbps,share_windows_ok,0.454
+transfer,av,peer_S0.42,"LTE-V2X PC5, field mean",0.72 Mbps,transfer_min,77.778
+transfer,av,peer_S0.42,"LTE-V2X PC5, field mean",0.72 Mbps,share_contacts_ok,0.000
+transfer,av,peer_S0.42,"LTE-V2X PC5, field mean",0.72 Mbps,beta_eff_per_min,0.000
+transfer,av,peer_S0.42,"LTE-V2X PC5, field peak",2.6 Mbps,transfer_min,21.538
+transfer,av,peer_S0.42,"LTE-V2X PC5, field peak",2.6 Mbps,share_contacts_ok,0.014
+transfer,av,peer_S0.42,"LTE-V2X PC5, field peak",2.6 Mbps,beta_eff_per_min,0.011
+transfer,av,peer_S0.42,802.11p default,6 Mbps,transfer_min,9.333
+transfer,av,peer_S0.42,802.11p default,6 Mbps,share_contacts_ok,0.054
+transfer,av,peer_S0.42,802.11p default,6 Mbps,beta_eff_per_min,0.045
+transfer,av,peer_S0.42,802.11p top rate,27 Mbps,transfer_min,2.074
+transfer,av,peer_S0.42,802.11p top rate,27 Mbps,share_contacts_ok,0.198
+transfer,av,peer_S0.42,802.11p top rate,27 Mbps,beta_eff_per_min,0.162
+transfer,av,link_S4,cellular backhaul,297 Mbps,transfer_min,1.796
+transfer,av,link_S4,cellular backhaul,297 Mbps,share_windows_ok,0.443
+transfer,av,link_S4,"satellite, documented",118 Mbps,transfer_min,4.520
+transfer,av,link_S4,"satellite, documented",118 Mbps,share_windows_ok,0.422
+transfer,av,link_S4,"poor cellular, p10",28 Mbps,transfer_min,19.048
+transfer,av,link_S4,"poor cellular, p10",28 Mbps,share_windows_ok,0.341
+transfer,av,link_S4,"local staging, fixed",372 Mbps,transfer_min,1.434
+transfer,av,link_S4,"local staging, fixed",372 Mbps,share_windows_ok,0.445
+transfer,av,peer_S4,"LTE-V2X PC5, field mean",0.72 Mbps,transfer_min,740.741
+transfer,av,peer_S4,"LTE-V2X PC5, field mean",0.72 Mbps,share_contacts_ok,0.000
+transfer,av,peer_S4,"LTE-V2X PC5, field mean",0.72 Mbps,beta_eff_per_min,0.000
+transfer,av,peer_S4,"LTE-V2X PC5, field peak",2.6 Mbps,transfer_min,205.128
+transfer,av,peer_S4,"LTE-V2X PC5, field peak",2.6 Mbps,share_contacts_ok,0.000
+transfer,av,peer_S4,"LTE-V2X PC5, field peak",2.6 Mbps,beta_eff_per_min,0.000
+transfer,av,peer_S4,802.11p default,6 Mbps,transfer_min,88.889
+transfer,av,peer_S4,802.11p default,6 Mbps,share_contacts_ok,0.000
+transfer,av,peer_S4,802.11p default,6 Mbps,beta_eff_per_min,0.000
+transfer,av,peer_S4,802.11p top rate,27 Mbps,transfer_min,19.753
+transfer,av,peer_S4,802.11p top rate,27 Mbps,share_contacts_ok,0.016
+transfer,av,peer_S4,802.11p top rate,27 Mbps,beta_eff_per_min,0.013
+main,drone,source,exp,centralized,T95_min_at_4GB,160.000
+main,drone,source,exp,centralized,S95_gb_at_360min,10.000
+main,drone,source,exp,gossip,T95_min_at_4GB,
+main,drone,source,exp,gossip,S95_gb_at_360min,
+main,drone,source,exp,depot,T95_min_at_4GB,140.000
+main,drone,source,exp,depot,S95_gb_at_360min,10.000
+main,drone,source,exp,hybrid,T95_min_at_4GB,140.000
+main,drone,source,exp,hybrid,S95_gb_at_360min,10.000
+main,drone,source,exp,nonatomic,T95_min_at_4GB,140.000
+main,drone,source,exp,nonatomic,S95_gb_at_360min,10.000
+main,drone,source,exp,bandwidth,T95_min_at_4GB,120.000
+main,drone,source,exp,bandwidth,S95_gb_at_360min,10.000
+main,drone,source,bootstrap,centralized,T95_min_at_4GB,60.000
+main,drone,source,bootstrap,centralized,S95_gb_at_360min,10.000
+main,drone,source,bootstrap,gossip,T95_min_at_4GB,
+main,drone,source,bootstrap,gossip,S95_gb_at_360min,
+main,drone,source,bootstrap,depot,T95_min_at_4GB,50.000
+main,drone,source,bootstrap,depot,S95_gb_at_360min,10.000
+main,drone,source,bootstrap,hybrid,T95_min_at_4GB,50.000
+main,drone,source,bootstrap,hybrid,S95_gb_at_360min,10.000
+main,drone,source,bootstrap,nonatomic,T95_min_at_4GB,50.000
+main,drone,source,bootstrap,nonatomic,S95_gb_at_360min,10.000
+main,drone,source,bootstrap,bandwidth,T95_min_at_4GB,40.000
+main,drone,source,bootstrap,bandwidth,S95_gb_at_360min,10.000
+main,drone,source,replay,centralized,T95_min_at_4GB,60.000
+main,drone,source,replay,centralized,S95_gb_at_360min,10.000
+main,drone,source,replay,gossip,T95_min_at_4GB,
+main,drone,source,replay,gossip,S95_gb_at_360min,
+main,drone,source,replay,depot,T95_min_at_4GB,50.000
+main,drone,source,replay,depot,S95_gb_at_360min,10.000
+main,drone,source,replay,hybrid,T95_min_at_4GB,50.000
+main,drone,source,replay,hybrid,S95_gb_at_360min,10.000
+main,drone,source,replay,nonatomic,T95_min_at_4GB,50.000
+main,drone,source,replay,nonatomic,S95_gb_at_360min,10.000
+main,drone,source,replay,bandwidth,T95_min_at_4GB,40.000
+main,drone,source,replay,bandwidth,S95_gb_at_360min,10.000
+main,av,source,exp,centralized,T95_min_at_4GB,
+main,av,source,exp,centralized,S95_gb_at_360min,
+main,av,source,exp,gossip,T95_min_at_4GB,
+main,av,source,exp,gossip,S95_gb_at_360min,
+main,av,source,exp,depot,T95_min_at_4GB,
+main,av,source,exp,depot,S95_gb_at_360min,
+main,av,source,exp,hybrid,T95_min_at_4GB,
+main,av,source,exp,hybrid,S95_gb_at_360min,
+main,av,source,exp,nonatomic,T95_min_at_4GB,
+main,av,source,exp,nonatomic,S95_gb_at_360min,
+main,av,source,exp,bandwidth,T95_min_at_4GB,
+main,av,source,exp,bandwidth,S95_gb_at_360min,
+main,av,source,bootstrap,centralized,T95_min_at_4GB,160.000
+main,av,source,bootstrap,centralized,S95_gb_at_360min,10.000
+main,av,source,bootstrap,gossip,T95_min_at_4GB,150.000
+main,av,source,bootstrap,gossip,S95_gb_at_360min,10.000
+main,av,source,bootstrap,depot,T95_min_at_4GB,
+main,av,source,bootstrap,depot,S95_gb_at_360min,
+main,av,source,bootstrap,hybrid,T95_min_at_4GB,150.000
+main,av,source,bootstrap,hybrid,S95_gb_at_360min,10.000
+main,av,source,bootstrap,nonatomic,T95_min_at_4GB,150.000
+main,av,source,bootstrap,nonatomic,S95_gb_at_360min,10.000
+main,av,source,bootstrap,bandwidth,T95_min_at_4GB,90.000
+main,av,source,bootstrap,bandwidth,S95_gb_at_360min,10.000
+main,av,source,replay,centralized,T95_min_at_4GB,150.000
+main,av,source,replay,centralized,S95_gb_at_360min,10.000
+main,av,source,replay,gossip,T95_min_at_4GB,150.000
+main,av,source,replay,gossip,S95_gb_at_360min,10.000
+main,av,source,replay,depot,T95_min_at_4GB,
+main,av,source,replay,depot,S95_gb_at_360min,
+main,av,source,replay,hybrid,T95_min_at_4GB,150.000
+main,av,source,replay,hybrid,S95_gb_at_360min,10.000
+main,av,source,replay,nonatomic,T95_min_at_4GB,150.000
+main,av,source,replay,nonatomic,S95_gb_at_360min,10.000
+main,av,source,replay,bandwidth,T95_min_at_4GB,80.000
+main,av,source,replay,bandwidth,S95_gb_at_360min,10.000
+replay_hour,drone,start_hour,8,centralized,T95_min_at_4GB,50.000
+replay_hour,drone,start_hour,8,depot,T95_min_at_4GB,40.000
+replay_hour,drone,start_hour,8,hybrid,T95_min_at_4GB,40.000
+replay_hour,drone,start_hour,12,centralized,T95_min_at_4GB,60.000
+replay_hour,drone,start_hour,12,depot,T95_min_at_4GB,50.000
+replay_hour,drone,start_hour,12,hybrid,T95_min_at_4GB,50.000
+replay_hour,drone,start_hour,16,centralized,T95_min_at_4GB,60.000
+replay_hour,drone,start_hour,16,depot,T95_min_at_4GB,50.000
+replay_hour,drone,start_hour,16,hybrid,T95_min_at_4GB,50.000
+replay_hour,drone,start_hour,20,centralized,T95_min_at_4GB,60.000
+replay_hour,drone,start_hour,20,depot,T95_min_at_4GB,50.000
+replay_hour,drone,start_hour,20,hybrid,T95_min_at_4GB,50.000
+replay_hour,av,start_hour,8,centralized,T95_min_at_4GB,150.000
+replay_hour,av,start_hour,8,depot,T95_min_at_4GB,
+replay_hour,av,start_hour,8,hybrid,T95_min_at_4GB,150.000
+replay_hour,av,start_hour,12,centralized,T95_min_at_4GB,150.000
+replay_hour,av,start_hour,12,depot,T95_min_at_4GB,
+replay_hour,av,start_hour,12,hybrid,T95_min_at_4GB,150.000
+replay_hour,av,start_hour,16,centralized,T95_min_at_4GB,190.000
+replay_hour,av,start_hour,16,depot,T95_min_at_4GB,
+replay_hour,av,start_hour,16,hybrid,T95_min_at_4GB,190.000
+replay_hour,av,start_hour,20,centralized,T95_min_at_4GB,100.000
+replay_hour,av,start_hour,20,depot,T95_min_at_4GB,240.000
+replay_hour,av,start_hour,20,hybrid,T95_min_at_4GB,100.000
+install,drone,install_min,5.0,centralized,T95_min_at_4GB,20.000
+install,drone,install_min,5.0,centralized,completion_at_360min_4GB,1.000
+install,drone,install_min,5.0,depot,T95_min_at_4GB,20.000
+install,drone,install_min,5.0,depot,completion_at_360min_4GB,1.000
+install,drone,install_min,5.0,hybrid,T95_min_at_4GB,20.000
+install,drone,install_min,5.0,hybrid,completion_at_360min_4GB,1.000
+install,drone,install_min,10.0,centralized,T95_min_at_4GB,30.000
+install,drone,install_min,10.0,centralized,completion_at_360min_4GB,1.000
+install,drone,install_min,10.0,depot,T95_min_at_4GB,30.000
+install,drone,install_min,10.0,depot,completion_at_360min_4GB,1.000
+install,drone,install_min,10.0,hybrid,T95_min_at_4GB,30.000
+install,drone,install_min,10.0,hybrid,completion_at_360min_4GB,1.000
+install,drone,install_min,20.0,centralized,T95_min_at_4GB,60.000
+install,drone,install_min,20.0,centralized,completion_at_360min_4GB,1.000
+install,drone,install_min,20.0,depot,T95_min_at_4GB,50.000
+install,drone,install_min,20.0,depot,completion_at_360min_4GB,1.000
+install,drone,install_min,20.0,hybrid,T95_min_at_4GB,50.000
+install,drone,install_min,20.0,hybrid,completion_at_360min_4GB,1.000
+install,drone,install_min,30.0,centralized,T95_min_at_4GB,80.000
+install,drone,install_min,30.0,centralized,completion_at_360min_4GB,1.000
+install,drone,install_min,30.0,depot,T95_min_at_4GB,70.000
+install,drone,install_min,30.0,depot,completion_at_360min_4GB,1.000
+install,drone,install_min,30.0,hybrid,T95_min_at_4GB,70.000
+install,drone,install_min,30.0,hybrid,completion_at_360min_4GB,1.000
+install,drone,install_min,45.0,centralized,T95_min_at_4GB,110.000
+install,drone,install_min,45.0,centralized,completion_at_360min_4GB,1.000
+install,drone,install_min,45.0,depot,T95_min_at_4GB,110.000
+install,drone,install_min,45.0,depot,completion_at_360min_4GB,1.000
+install,drone,install_min,45.0,hybrid,T95_min_at_4GB,110.000
+install,drone,install_min,45.0,hybrid,completion_at_360min_4GB,1.000
+install,drone,install_min,60.0,centralized,T95_min_at_4GB,170.000
+install,drone,install_min,60.0,centralized,completion_at_360min_4GB,0.999
+install,drone,install_min,60.0,depot,T95_min_at_4GB,160.000
+install,drone,install_min,60.0,depot,completion_at_360min_4GB,1.000
+install,drone,install_min,60.0,hybrid,T95_min_at_4GB,160.000
+install,drone,install_min,60.0,hybrid,completion_at_360min_4GB,1.000
+install,av,install_min,5.0,centralized,T95_min_at_4GB,40.000
+install,av,install_min,5.0,centralized,completion_at_360min_4GB,1.000
+install,av,install_min,5.0,depot,T95_min_at_4GB,
+install,av,install_min,5.0,depot,completion_at_360min_4GB,0.923
+install,av,install_min,5.0,hybrid,T95_min_at_4GB,40.000
+install,av,install_min,5.0,hybrid,completion_at_360min_4GB,1.000
+install,av,install_min,10.0,centralized,T95_min_at_4GB,60.000
+install,av,install_min,10.0,centralized,completion_at_360min_4GB,1.000
+install,av,install_min,10.0,depot,T95_min_at_4GB,
+install,av,install_min,10.0,depot,completion_at_360min_4GB,0.920
+install,av,install_min,10.0,hybrid,T95_min_at_4GB,60.000
+install,av,install_min,10.0,hybrid,completion_at_360min_4GB,1.000
+install,av,install_min,20.0,centralized,T95_min_at_4GB,100.000
+install,av,install_min,20.0,centralized,completion_at_360min_4GB,1.000
+install,av,install_min,20.0,depot,T95_min_at_4GB,
+install,av,install_min,20.0,depot,completion_at_360min_4GB,0.913
+install,av,install_min,20.0,hybrid,T95_min_at_4GB,100.000
+install,av,install_min,20.0,hybrid,completion_at_360min_4GB,1.000
+install,av,install_min,30.0,centralized,T95_min_at_4GB,150.000
+install,av,install_min,30.0,centralized,completion_at_360min_4GB,0.998
+install,av,install_min,30.0,depot,T95_min_at_4GB,
+install,av,install_min,30.0,depot,completion_at_360min_4GB,0.906
+install,av,install_min,30.0,hybrid,T95_min_at_4GB,150.000
+install,av,install_min,30.0,hybrid,completion_at_360min_4GB,0.998
+install,av,install_min,45.0,centralized,T95_min_at_4GB,230.000
+install,av,install_min,45.0,centralized,completion_at_360min_4GB,0.989
+install,av,install_min,45.0,depot,T95_min_at_4GB,
+install,av,install_min,45.0,depot,completion_at_360min_4GB,0.895
+install,av,install_min,45.0,hybrid,T95_min_at_4GB,230.000
+install,av,install_min,45.0,hybrid,completion_at_360min_4GB,0.989
+install,av,install_min,60.0,centralized,T95_min_at_4GB,310.000
+install,av,install_min,60.0,centralized,completion_at_360min_4GB,0.968
+install,av,install_min,60.0,depot,T95_min_at_4GB,
+install,av,install_min,60.0,depot,completion_at_360min_4GB,0.882
+install,av,install_min,60.0,hybrid,T95_min_at_4GB,310.000
+install,av,install_min,60.0,hybrid,completion_at_360min_4GB,0.968
+backhaul,drone,r_bh_mbps,5.0,centralized,T95_min_at_4GB,
+backhaul,drone,r_bh_mbps,5.0,centralized,completion_at_360min_4GB,0.828
+backhaul,drone,r_bh_mbps,5.0,hybrid,T95_min_at_4GB,50.000
+backhaul,drone,r_bh_mbps,5.0,hybrid,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,10.0,centralized,T95_min_at_4GB,220.000
+backhaul,drone,r_bh_mbps,10.0,centralized,completion_at_360min_4GB,0.995
+backhaul,drone,r_bh_mbps,10.0,hybrid,T95_min_at_4GB,50.000
+backhaul,drone,r_bh_mbps,10.0,hybrid,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,28.0,centralized,T95_min_at_4GB,90.000
+backhaul,drone,r_bh_mbps,28.0,centralized,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,28.0,hybrid,T95_min_at_4GB,50.000
+backhaul,drone,r_bh_mbps,28.0,hybrid,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,50.0,centralized,T95_min_at_4GB,70.000
+backhaul,drone,r_bh_mbps,50.0,centralized,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,50.0,hybrid,T95_min_at_4GB,50.000
+backhaul,drone,r_bh_mbps,50.0,hybrid,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,118.0,centralized,T95_min_at_4GB,60.000
+backhaul,drone,r_bh_mbps,118.0,centralized,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,118.0,hybrid,T95_min_at_4GB,50.000
+backhaul,drone,r_bh_mbps,118.0,hybrid,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,137.0,centralized,T95_min_at_4GB,50.000
+backhaul,drone,r_bh_mbps,137.0,centralized,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,137.0,hybrid,T95_min_at_4GB,50.000
+backhaul,drone,r_bh_mbps,137.0,hybrid,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,297.0,centralized,T95_min_at_4GB,50.000
+backhaul,drone,r_bh_mbps,297.0,centralized,completion_at_360min_4GB,1.000
+backhaul,drone,r_bh_mbps,297.0,hybrid,T95_min_at_4GB,50.000
+backhaul,drone,r_bh_mbps,297.0,hybrid,completion_at_360min_4GB,1.000
+backhaul,av,r_bh_mbps,5.0,centralized,T95_min_at_4GB,
+backhaul,av,r_bh_mbps,5.0,centralized,completion_at_360min_4GB,0.762
+backhaul,av,r_bh_mbps,5.0,hybrid,T95_min_at_4GB,
+backhaul,av,r_bh_mbps,5.0,hybrid,completion_at_360min_4GB,0.910
+backhaul,av,r_bh_mbps,10.0,centralized,T95_min_at_4GB,
+backhaul,av,r_bh_mbps,10.0,centralized,completion_at_360min_4GB,0.921
+backhaul,av,r_bh_mbps,10.0,hybrid,T95_min_at_4GB,360.000
+backhaul,av,r_bh_mbps,10.0,hybrid,completion_at_360min_4GB,0.952
+backhaul,av,r_bh_mbps,28.0,centralized,T95_min_at_4GB,240.000
+backhaul,av,r_bh_mbps,28.0,centralized,completion_at_360min_4GB,0.987
+backhaul,av,r_bh_mbps,28.0,hybrid,T95_min_at_4GB,230.000
+backhaul,av,r_bh_mbps,28.0,hybrid,completion_at_360min_4GB,0.989
+backhaul,av,r_bh_mbps,50.0,centralized,T95_min_at_4GB,200.000
+backhaul,av,r_bh_mbps,50.0,centralized,completion_at_360min_4GB,0.993
+backhaul,av,r_bh_mbps,50.0,hybrid,T95_min_at_4GB,190.000
+backhaul,av,r_bh_mbps,50.0,hybrid,completion_at_360min_4GB,0.994
+backhaul,av,r_bh_mbps,118.0,centralized,T95_min_at_4GB,160.000
+backhaul,av,r_bh_mbps,118.0,centralized,completion_at_360min_4GB,0.997
+backhaul,av,r_bh_mbps,118.0,hybrid,T95_min_at_4GB,160.000
+backhaul,av,r_bh_mbps,118.0,hybrid,completion_at_360min_4GB,0.997
+backhaul,av,r_bh_mbps,137.0,centralized,T95_min_at_4GB,160.000
+backhaul,av,r_bh_mbps,137.0,centralized,completion_at_360min_4GB,0.998
+backhaul,av,r_bh_mbps,137.0,hybrid,T95_min_at_4GB,160.000
+backhaul,av,r_bh_mbps,137.0,hybrid,completion_at_360min_4GB,0.998
+backhaul,av,r_bh_mbps,297.0,centralized,T95_min_at_4GB,150.000
+backhaul,av,r_bh_mbps,297.0,centralized,completion_at_360min_4GB,0.998
+backhaul,av,r_bh_mbps,297.0,hybrid,T95_min_at_4GB,150.000
+backhaul,av,r_bh_mbps,297.0,hybrid,completion_at_360min_4GB,0.998
+scale,drone,stat_scale,0.25,centralized,T95_min_at_4GB,140.000
+scale,drone,stat_scale,0.25,centralized,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,0.25,depot,T95_min_at_4GB,110.000
+scale,drone,stat_scale,0.25,depot,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,0.25,hybrid,T95_min_at_4GB,110.000
+scale,drone,stat_scale,0.25,hybrid,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,0.5,centralized,T95_min_at_4GB,70.000
+scale,drone,stat_scale,0.5,centralized,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,0.5,depot,T95_min_at_4GB,60.000
+scale,drone,stat_scale,0.5,depot,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,0.5,hybrid,T95_min_at_4GB,60.000
+scale,drone,stat_scale,0.5,hybrid,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,0.75,centralized,T95_min_at_4GB,60.000
+scale,drone,stat_scale,0.75,centralized,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,0.75,depot,T95_min_at_4GB,50.000
+scale,drone,stat_scale,0.75,depot,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,0.75,hybrid,T95_min_at_4GB,50.000
+scale,drone,stat_scale,0.75,hybrid,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,1.0,centralized,T95_min_at_4GB,60.000
+scale,drone,stat_scale,1.0,centralized,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,1.0,depot,T95_min_at_4GB,50.000
+scale,drone,stat_scale,1.0,depot,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,1.0,hybrid,T95_min_at_4GB,50.000
+scale,drone,stat_scale,1.0,hybrid,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,1.5,centralized,T95_min_at_4GB,50.000
+scale,drone,stat_scale,1.5,centralized,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,1.5,depot,T95_min_at_4GB,40.000
+scale,drone,stat_scale,1.5,depot,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,1.5,hybrid,T95_min_at_4GB,40.000
+scale,drone,stat_scale,1.5,hybrid,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,2.0,centralized,T95_min_at_4GB,40.000
+scale,drone,stat_scale,2.0,centralized,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,2.0,depot,T95_min_at_4GB,40.000
+scale,drone,stat_scale,2.0,depot,completion_at_360min_4GB,1.000
+scale,drone,stat_scale,2.0,hybrid,T95_min_at_4GB,40.000
+scale,drone,stat_scale,2.0,hybrid,completion_at_360min_4GB,1.000
+scale,av,stat_scale,0.25,centralized,T95_min_at_4GB,
+scale,av,stat_scale,0.25,centralized,completion_at_360min_4GB,0.932
+scale,av,stat_scale,0.25,depot,T95_min_at_4GB,
+scale,av,stat_scale,0.25,depot,completion_at_360min_4GB,0.710
+scale,av,stat_scale,0.25,hybrid,T95_min_at_4GB,
+scale,av,stat_scale,0.25,hybrid,completion_at_360min_4GB,0.932
+scale,av,stat_scale,0.5,centralized,T95_min_at_4GB,240.000
+scale,av,stat_scale,0.5,centralized,completion_at_360min_4GB,0.986
+scale,av,stat_scale,0.5,depot,T95_min_at_4GB,
+scale,av,stat_scale,0.5,depot,completion_at_360min_4GB,0.772
+scale,av,stat_scale,0.5,hybrid,T95_min_at_4GB,240.000
+scale,av,stat_scale,0.5,hybrid,completion_at_360min_4GB,0.986
+scale,av,stat_scale,0.75,centralized,T95_min_at_4GB,190.000
+scale,av,stat_scale,0.75,centralized,completion_at_360min_4GB,0.996
+scale,av,stat_scale,0.75,depot,T95_min_at_4GB,
+scale,av,stat_scale,0.75,depot,completion_at_360min_4GB,0.858
+scale,av,stat_scale,0.75,hybrid,T95_min_at_4GB,190.000
+scale,av,stat_scale,0.75,hybrid,completion_at_360min_4GB,0.996
+scale,av,stat_scale,1.0,centralized,T95_min_at_4GB,150.000
+scale,av,stat_scale,1.0,centralized,completion_at_360min_4GB,0.999
+scale,av,stat_scale,1.0,depot,T95_min_at_4GB,
+scale,av,stat_scale,1.0,depot,completion_at_360min_4GB,0.904
+scale,av,stat_scale,1.0,hybrid,T95_min_at_4GB,150.000
+scale,av,stat_scale,1.0,hybrid,completion_at_360min_4GB,0.999
+scale,av,stat_scale,1.5,centralized,T95_min_at_4GB,120.000
+scale,av,stat_scale,1.5,centralized,completion_at_360min_4GB,1.000
+scale,av,stat_scale,1.5,depot,T95_min_at_4GB,
+scale,av,stat_scale,1.5,depot,completion_at_360min_4GB,0.947
+scale,av,stat_scale,1.5,hybrid,T95_min_at_4GB,120.000
+scale,av,stat_scale,1.5,hybrid,completion_at_360min_4GB,1.000
+scale,av,stat_scale,2.0,centralized,T95_min_at_4GB,90.000
+scale,av,stat_scale,2.0,centralized,completion_at_360min_4GB,1.000
+scale,av,stat_scale,2.0,depot,T95_min_at_4GB,300.000
+scale,av,stat_scale,2.0,depot,completion_at_360min_4GB,0.965
+scale,av,stat_scale,2.0,hybrid,T95_min_at_4GB,90.000
+scale,av,stat_scale,2.0,hybrid,completion_at_360min_4GB,1.000
+reach_metro,av,p_depot,0.0,centralized,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.0,centralized,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,0.0,depot,T95_min_at_4GB,
+reach_metro,av,p_depot,0.0,depot,completion_at_360min_4GB,0.000
+reach_metro,av,p_depot,0.0,hybrid,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.0,hybrid,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,0.2,centralized,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.2,centralized,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,0.2,depot,T95_min_at_4GB,
+reach_metro,av,p_depot,0.2,depot,completion_at_360min_4GB,0.308
+reach_metro,av,p_depot,0.2,hybrid,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.2,hybrid,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,0.4,centralized,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.4,centralized,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,0.4,depot,T95_min_at_4GB,
+reach_metro,av,p_depot,0.4,depot,completion_at_360min_4GB,0.556
+reach_metro,av,p_depot,0.4,hybrid,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.4,hybrid,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,0.6,centralized,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.6,centralized,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,0.6,depot,T95_min_at_4GB,
+reach_metro,av,p_depot,0.6,depot,completion_at_360min_4GB,0.742
+reach_metro,av,p_depot,0.6,hybrid,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.6,hybrid,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,0.8,centralized,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.8,centralized,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,0.8,depot,T95_min_at_4GB,
+reach_metro,av,p_depot,0.8,depot,completion_at_360min_4GB,0.888
+reach_metro,av,p_depot,0.8,hybrid,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,0.8,hybrid,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,1.0,centralized,T95_min_at_4GB,160.000
+reach_metro,av,p_depot,1.0,centralized,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,1.0,depot,T95_min_at_4GB,150.000
+reach_metro,av,p_depot,1.0,depot,completion_at_360min_4GB,0.998
+reach_metro,av,p_depot,1.0,hybrid,T95_min_at_4GB,150.000
+reach_metro,av,p_depot,1.0,hybrid,completion_at_360min_4GB,0.998
+reach_p10,av,p_depot,0.0,centralized,T95_min_at_4GB,240.000
+reach_p10,av,p_depot,0.0,centralized,completion_at_360min_4GB,0.986
+reach_p10,av,p_depot,0.0,depot,T95_min_at_4GB,
+reach_p10,av,p_depot,0.0,depot,completion_at_360min_4GB,0.000
+reach_p10,av,p_depot,0.0,hybrid,T95_min_at_4GB,240.000
+reach_p10,av,p_depot,0.0,hybrid,completion_at_360min_4GB,0.986
+reach_p10,av,p_depot,0.2,centralized,T95_min_at_4GB,240.000
+reach_p10,av,p_depot,0.2,centralized,completion_at_360min_4GB,0.986
+reach_p10,av,p_depot,0.2,depot,T95_min_at_4GB,
+reach_p10,av,p_depot,0.2,depot,completion_at_360min_4GB,0.306
+reach_p10,av,p_depot,0.2,hybrid,T95_min_at_4GB,220.000
+reach_p10,av,p_depot,0.2,hybrid,completion_at_360min_4GB,0.991
+reach_p10,av,p_depot,0.4,centralized,T95_min_at_4GB,240.000
+reach_p10,av,p_depot,0.4,centralized,completion_at_360min_4GB,0.986
+reach_p10,av,p_depot,0.4,depot,T95_min_at_4GB,
+reach_p10,av,p_depot,0.4,depot,completion_at_360min_4GB,0.551
+reach_p10,av,p_depot,0.4,hybrid,T95_min_at_4GB,200.000
+reach_p10,av,p_depot,0.4,hybrid,completion_at_360min_4GB,0.994
+reach_p10,av,p_depot,0.6,centralized,T95_min_at_4GB,240.000
+reach_p10,av,p_depot,0.6,centralized,completion_at_360min_4GB,0.986
+reach_p10,av,p_depot,0.6,depot,T95_min_at_4GB,
+reach_p10,av,p_depot,0.6,depot,completion_at_360min_4GB,0.741
+reach_p10,av,p_depot,0.6,hybrid,T95_min_at_4GB,180.000
+reach_p10,av,p_depot,0.6,hybrid,completion_at_360min_4GB,0.996
+reach_p10,av,p_depot,0.8,centralized,T95_min_at_4GB,240.000
+reach_p10,av,p_depot,0.8,centralized,completion_at_360min_4GB,0.986
+reach_p10,av,p_depot,0.8,depot,T95_min_at_4GB,
+reach_p10,av,p_depot,0.8,depot,completion_at_360min_4GB,0.888
+reach_p10,av,p_depot,0.8,hybrid,T95_min_at_4GB,160.000
+reach_p10,av,p_depot,0.8,hybrid,completion_at_360min_4GB,0.998
+reach_p10,av,p_depot,1.0,centralized,T95_min_at_4GB,240.000
+reach_p10,av,p_depot,1.0,centralized,completion_at_360min_4GB,0.986
+reach_p10,av,p_depot,1.0,depot,T95_min_at_4GB,150.000
+reach_p10,av,p_depot,1.0,depot,completion_at_360min_4GB,0.999
+reach_p10,av,p_depot,1.0,hybrid,T95_min_at_4GB,150.000
+reach_p10,av,p_depot,1.0,hybrid,completion_at_360min_4GB,0.999
+gossip,drone,beta_per_min,0.0015,gossip,T95_min_at_4GB,
+gossip,drone,beta_per_min,0.0015,gossip,completion_at_360min_4GB,0.079
+gossip,drone,beta_per_min,0.006,gossip,T95_min_at_4GB,
+gossip,drone,beta_per_min,0.006,gossip,completion_at_360min_4GB,0.281
+gossip,drone,beta_per_min,0.013,gossip,T95_min_at_4GB,
+gossip,drone,beta_per_min,0.013,gossip,completion_at_360min_4GB,0.808
+gossip,drone,beta_per_min,0.042,gossip,T95_min_at_4GB,170.000
+gossip,drone,beta_per_min,0.042,gossip,completion_at_360min_4GB,1.000
+gossip,drone,beta_per_min,0.103,gossip,T95_min_at_4GB,90.000
+gossip,drone,beta_per_min,0.103,gossip,completion_at_360min_4GB,1.000
+gossip,drone,beta_per_min,0.204,gossip,T95_min_at_4GB,60.000
+gossip,drone,beta_per_min,0.204,gossip,completion_at_360min_4GB,1.000
+gossip,drone,beta_per_min,0.523,gossip,T95_min_at_4GB,50.000
+gossip,drone,beta_per_min,0.523,gossip,completion_at_360min_4GB,1.000
+gossip,drone,beta_per_min,0.822,gossip,T95_min_at_4GB,50.000
+gossip,drone,beta_per_min,0.822,gossip,completion_at_360min_4GB,1.000
+gossip,av,beta_per_min,0.0015,gossip,T95_min_at_4GB,
+gossip,av,beta_per_min,0.0015,gossip,completion_at_360min_4GB,0.077
+gossip,av,beta_per_min,0.006,gossip,T95_min_at_4GB,
+gossip,av,beta_per_min,0.006,gossip,completion_at_360min_4GB,0.257
+gossip,av,beta_per_min,0.013,gossip,T95_min_at_4GB,
+gossip,av,beta_per_min,0.013,gossip,completion_at_360min_4GB,0.745
+gossip,av,beta_per_min,0.042,gossip,T95_min_at_4GB,230.000
+gossip,av,beta_per_min,0.042,gossip,completion_at_360min_4GB,0.995
+gossip,av,beta_per_min,0.103,gossip,T95_min_at_4GB,180.000
+gossip,av,beta_per_min,0.103,gossip,completion_at_360min_4GB,0.998
+gossip,av,beta_per_min,0.204,gossip,T95_min_at_4GB,160.000
+gossip,av,beta_per_min,0.204,gossip,completion_at_360min_4GB,0.998
+gossip,av,beta_per_min,0.523,gossip,T95_min_at_4GB,150.000
+gossip,av,beta_per_min,0.523,gossip,completion_at_360min_4GB,0.998
+gossip,av,beta_per_min,0.822,gossip,T95_min_at_4GB,150.000
+gossip,av,beta_per_min,0.822,gossip,completion_at_360min_4GB,0.999
+peer,av,peer_rate_mbps_S0.42,0.72,gossip,beta_eff_per_min,0.000
+peer,av,peer_rate_mbps_S0.42,0.72,gossip,share_contacts_ok,0.000
+peer,av,peer_rate_mbps_S0.42,0.72,gossip,T95_min,
+peer,av,peer_rate_mbps_S0.42,0.72,gossip,completion_at_360min,0.049
+peer,av,peer_rate_mbps_S0.42,2.6,gossip,beta_eff_per_min,0.011
+peer,av,peer_rate_mbps_S0.42,2.6,gossip,share_contacts_ok,0.014
+peer,av,peer_rate_mbps_S0.42,2.6,gossip,T95_min,
+peer,av,peer_rate_mbps_S0.42,2.6,gossip,completion_at_360min,0.630
+peer,av,peer_rate_mbps_S0.42,6.0,gossip,beta_eff_per_min,0.045
+peer,av,peer_rate_mbps_S0.42,6.0,gossip,share_contacts_ok,0.054
+peer,av,peer_rate_mbps_S0.42,6.0,gossip,T95_min,220.000
+peer,av,peer_rate_mbps_S0.42,6.0,gossip,completion_at_360min,0.995
+peer,av,peer_rate_mbps_S0.42,27.0,gossip,beta_eff_per_min,0.162
+peer,av,peer_rate_mbps_S0.42,27.0,gossip,share_contacts_ok,0.198
+peer,av,peer_rate_mbps_S0.42,27.0,gossip,T95_min,160.000
+peer,av,peer_rate_mbps_S0.42,27.0,gossip,completion_at_360min,0.999
+peer,av,peer_rate_mbps_S4,0.72,gossip,beta_eff_per_min,0.000
+peer,av,peer_rate_mbps_S4,0.72,gossip,share_contacts_ok,0.000
+peer,av,peer_rate_mbps_S4,0.72,gossip,T95_min,
+peer,av,peer_rate_mbps_S4,0.72,gossip,completion_at_360min,0.049
+peer,av,peer_rate_mbps_S4,2.6,gossip,beta_eff_per_min,0.000
+peer,av,peer_rate_mbps_S4,2.6,gossip,share_contacts_ok,0.000
+peer,av,peer_rate_mbps_S4,2.6,gossip,T95_min,
+peer,av,peer_rate_mbps_S4,2.6,gossip,completion_at_360min,0.049
+peer,av,peer_rate_mbps_S4,6.0,gossip,beta_eff_per_min,0.000
+peer,av,peer_rate_mbps_S4,6.0,gossip,share_contacts_ok,0.000
+peer,av,peer_rate_mbps_S4,6.0,gossip,T95_min,
+peer,av,peer_rate_mbps_S4,6.0,gossip,completion_at_360min,0.049
+peer,av,peer_rate_mbps_S4,27.0,gossip,beta_eff_per_min,0.013
+peer,av,peer_rate_mbps_S4,27.0,gossip,share_contacts_ok,0.016
+peer,av,peer_rate_mbps_S4,27.0,gossip,T95_min,
+peer,av,peer_rate_mbps_S4,27.0,gossip,completion_at_360min,0.753
+agency,drone,agency,cincinnati-pd,centralized,T95_min_at_4GB,60.000
+agency,drone,agency,cincinnati-pd,centralized,completion_at_360min_4GB,1.000
+agency,drone,agency,cincinnati-pd,depot,T95_min_at_4GB,50.000
+agency,drone,agency,cincinnati-pd,depot,completion_at_360min_4GB,1.000
+agency,drone,agency,cincinnati-pd,hybrid,T95_min_at_4GB,50.000
+agency,drone,agency,cincinnati-pd,hybrid,completion_at_360min_4GB,1.000
+agency,drone,agency,wichita-pd,centralized,T95_min_at_4GB,30.000
+agency,drone,agency,wichita-pd,centralized,completion_at_360min_4GB,1.000
+agency,drone,agency,wichita-pd,depot,T95_min_at_4GB,30.000
+agency,drone,agency,wichita-pd,depot,completion_at_360min_4GB,1.000
+agency,drone,agency,wichita-pd,hybrid,T95_min_at_4GB,30.000
+agency,drone,agency,wichita-pd,hybrid,completion_at_360min_4GB,1.000
+agency,drone,agency,denver-pd,centralized,T95_min_at_4GB,40.000
+agency,drone,agency,denver-pd,centralized,completion_at_360min_4GB,1.000
+agency,drone,agency,denver-pd,depot,T95_min_at_4GB,30.000
+agency,drone,agency,denver-pd,depot,completion_at_360min_4GB,1.000
+agency,drone,agency,denver-pd,hybrid,T95_min_at_4GB,30.000
+agency,drone,agency,denver-pd,hybrid,completion_at_360min_4GB,1.000
+agency,drone,agency,castle-rock-pd-co,centralized,T95_min_at_4GB,30.000
+agency,drone,agency,castle-rock-pd-co,centralized,completion_at_360min_4GB,1.000
+agency,drone,agency,castle-rock-pd-co,depot,T95_min_at_4GB,30.000
+agency,drone,agency,castle-rock-pd-co,depot,completion_at_360min_4GB,1.000
+agency,drone,agency,castle-rock-pd-co,hybrid,T95_min_at_4GB,30.000
+agency,drone,agency,castle-rock-pd-co,hybrid,completion_at_360min_4GB,1.000
+agency,drone,agency,cspd-real-time-crime-center,centralized,T95_min_at_4GB,50.000
+agency,drone,agency,cspd-real-time-crime-center,centralized,completion_at_360min_4GB,1.000
+agency,drone,agency,cspd-real-time-crime-center,depot,T95_min_at_4GB,50.000
+agency,drone,agency,cspd-real-time-crime-center,depot,completion_at_360min_4GB,1.000
+agency,drone,agency,cspd-real-time-crime-center,hybrid,T95_min_at_4GB,50.000
+agency,drone,agency,cspd-real-time-crime-center,hybrid,completion_at_360min_4GB,1.000
+resume,drone,rho,0.0,centralized,T95_min_at_4GB,60.000
+resume,drone,rho,0.0,centralized,completion_at_360min_4GB,1.000
+resume,drone,rho,0.0,depot,T95_min_at_4GB,50.000
+resume,drone,rho,0.0,depot,completion_at_360min_4GB,1.000
+resume,drone,rho,0.25,centralized,T95_min_at_4GB,50.000
+resume,drone,rho,0.25,centralized,completion_at_360min_4GB,1.000
+resume,drone,rho,0.25,depot,T95_min_at_4GB,50.000
+resume,drone,rho,0.25,depot,completion_at_360min_4GB,1.000
+resume,drone,rho,0.5,centralized,T95_min_at_4GB,50.000
+resume,drone,rho,0.5,centralized,completion_at_360min_4GB,1.000
+resume,drone,rho,0.5,depot,T95_min_at_4GB,50.000
+resume,drone,rho,0.5,depot,completion_at_360min_4GB,1.000
+resume,drone,rho,0.75,centralized,T95_min_at_4GB,50.000
+resume,drone,rho,0.75,centralized,completion_at_360min_4GB,1.000
+resume,drone,rho,0.75,depot,T95_min_at_4GB,50.000
+resume,drone,rho,0.75,depot,completion_at_360min_4GB,1.000
+resume,drone,rho,1.0,centralized,T95_min_at_4GB,50.000
+resume,drone,rho,1.0,centralized,completion_at_360min_4GB,1.000
+resume,drone,rho,1.0,depot,T95_min_at_4GB,50.000
+resume,drone,rho,1.0,depot,completion_at_360min_4GB,1.000
+resume,av,rho,0.0,centralized,T95_min_at_4GB,160.000
+resume,av,rho,0.0,centralized,completion_at_360min_4GB,0.998
+resume,av,rho,0.0,depot,T95_min_at_4GB,
+resume,av,rho,0.0,depot,completion_at_360min_4GB,0.904
+resume,av,rho,0.25,centralized,T95_min_at_4GB,150.000
+resume,av,rho,0.25,centralized,completion_at_360min_4GB,0.998
+resume,av,rho,0.25,depot,T95_min_at_4GB,
+resume,av,rho,0.25,depot,completion_at_360min_4GB,0.904
+resume,av,rho,0.5,centralized,T95_min_at_4GB,150.000
+resume,av,rho,0.5,centralized,completion_at_360min_4GB,0.998
+resume,av,rho,0.5,depot,T95_min_at_4GB,
+resume,av,rho,0.5,depot,completion_at_360min_4GB,0.904
+resume,av,rho,0.75,centralized,T95_min_at_4GB,150.000
+resume,av,rho,0.75,centralized,completion_at_360min_4GB,0.998
+resume,av,rho,0.75,depot,T95_min_at_4GB,
+resume,av,rho,0.75,depot,completion_at_360min_4GB,0.904
+resume,av,rho,1.0,centralized,T95_min_at_4GB,150.000
+resume,av,rho,1.0,centralized,completion_at_360min_4GB,0.999
+resume,av,rho,1.0,depot,T95_min_at_4GB,
+resume,av,rho,1.0,depot,completion_at_360min_4GB,0.915

@@ -1,0 +1,104 @@
+{
+  "generated_utc": "2026-10-09T16:31:38+00:00",
+  "seed": 20260705,
+  "max_windows": 50000,
+  "daytime_hours": [
+    6,
+    22
+  ],
+  "av_sample_taxis": 500,
+  "sets": {
+    "drone_cincinnati-pd": {
+      "nonpositive_dropped": 0,
+      "operation_n": 18214,
+      "operation_kept": 18214,
+      "stationary_daytime_n": 11279,
+      "stationary_kept": 11279,
+      "op_median": 12.3,
+      "stat_median": 90.01,
+      "replay_flights": 18214,
+      "replay_devices": 6,
+      "replay_day0": "2025-03-19",
+      "replay_days": 534
+    },
+    "drone_wichita-pd": {
+      "nonpositive_dropped": 0,
+      "operation_n": 6630,
+      "operation_kept": 6630,
+      "stationary_daytime_n": 3963,
+      "stationary_kept": 3963,
+      "op_median": 16.88,
+      "stat_median": 435.48,
+      "replay_flights": 6630,
+      "replay_devices": 6,
+      "replay_day0": "2024-05-29",
+      "replay_days": 828
+    },
+    "drone_denver-pd": {
+      "nonpositive_dropped": 0,
+      "operation_n": 1900,
+      "operation_kept": 1900,
+      "stationary_daytime_n": 1244,
+      "stationary_kept": 1244,
+      "op_median": 8.92,
+      "stat_median": 73.64,
+      "replay_flights": 1900,
+      "replay_devices": 2,
+      "replay_day0": "2025-10-06",
+      "replay_days": 332
+    },
+    "drone_castle-rock-pd-co": {
+      "nonpositive_dropped": 0,
+      "operation_n": 1384,
+      "operation_kept": 1384,
+      "stationary_daytime_n": 831,
+      "stationary_kept": 831,
+      "op_median": 14.06,
+      "stat_median": 116.22,
+      "replay_flights": 1384,
+      "replay_devices": 2,
+      "replay_day0": "2025-07-31",
+      "replay_days": 399
+    },
+    "drone_cspd-real-time-crime-center": {
+      "nonpositive_dropped": 0,
+      "operation_n": 10441,
+      "operation_kept": 10441,
+      "stationary_daytime_n": 6332,
+      "stationary_kept": 6332,
+      "op_median": 11.28,
+      "stat_median": 93.12,
+      "replay_flights": 10441,
+      "replay_devices": 4,
+      "replay_day0": "2025-09-21",
+      "replay_days": 349
+    },
+    "av_chicago": {
+      "nonpositive_dropped": 764,
+      "operation_n": 536979,
+      "operation_kept": 50000,
+      "stationary_daytime_n": 434957,
+      "stationary_kept": 50000,
+      "op_median": 14.18,
+      "stat_median": 25.25,
+      "replay_trips": 98795,
+      "replay_devices": 500,
+      "replay_day0": "2026-08-03",
+      "replay_days": 28
+    },
+    "contacts_cabspotting": {
+      "cabs": 536,
+      "days": 24.0,
+      "ranges": [
+        "100m",
+        "300m",
+        "1000m"
+      ],
+      "contact_events": {
+        "100m": 4493336,
+        "300m": 15965386,
+        "1000m": 43766838
+      }
+    }
+  }
+}

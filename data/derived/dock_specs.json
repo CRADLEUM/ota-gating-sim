@@ -1,0 +1,41 @@
+{
+  "note": "Documented practice, not measurement. Vendor specification pages read on 2026-10-08. Charge time is the vendor's stated figure under the stated conditions; it is a lower bound on the time an aircraft spends in the dock between flights.",
+  "docks": [
+    {
+      "dock": "DJI Dock",
+      "aircraft": "Matrice 30 series",
+      "charge_min": 25,
+      "charge_condition": "ambient 25 C, aircraft charged from 10% to 90%",
+      "max_flight_min": null,
+      "backhaul": "10/100/1000 Mbps adaptive Ethernet port",
+      "url": "https://enterprise.dji.com/dock/specs"
+    },
+    {
+      "dock": "DJI Dock 2",
+      "aircraft": "Matrice 3D/3TD",
+      "charge_min": 32,
+      "charge_condition": "ambient 25 C, aircraft powered off, charged from 20% to 90%",
+      "max_flight_min": 50,
+      "backhaul": "10/100/1000 Mbps adaptive Ethernet port; supports external switches",
+      "url": "https://enterprise.dji.com/dock-2/specs"
+    },
+    {
+      "dock": "DJI Dock 3",
+      "aircraft": "Matrice 4D/4TD",
+      "charge_min": 27,
+      "charge_condition": "ambient 25 C, aircraft powered off, charged from 15% to 95%",
+      "max_flight_min": 54,
+      "backhaul": "10/100/1000 Mbps adaptive Ethernet port; 4G via DJI Cellular Dongle 2 (sold separately, not available in all regions)",
+      "url": "https://enterprise.dji.com/dock-3/specs"
+    },
+    {
+      "dock": "Skydio Dock for X10",
+      "aircraft": "Skydio X10",
+      "charge_min": null,
+      "charge_condition": "not stated in the datasheet",
+      "max_flight_min": 40,
+      "backhaul": "not extracted",
+      "url": "https://www.skydio.com"
+    }
+  ]
+}
