@@ -93,4 +93,6 @@ See `CITATION.cff`. Update it on acceptance.
 
 ## License
 
-MIT, see `LICENSE`.
+Code and documentation: MIT, see `LICENSE`.
+
+Ookla data: `data/derived/ookla/ookla_rates.csv` and `ookla_rates.json` are adapted from Speedtest® by Ookla® Global Fixed and Mobile Network Performance Maps (Ookla, 2026 Q2 fixed and mobile tiles, https://registry.opendata.aws/speedtest-global-performance/, accessed 8 Oct. 2026). The values are the authors' analysis: per-region tile and test counts, and medians and 10th percentiles of the per-tile mean speeds. These two files are shared under CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/), not MIT, so reuse must be non-commercial and keep the same license. The rate anchors in `gating_sim.py` and `docs/model.md` are read from them. Ookla trademarks used under license and reprinted with permission.
