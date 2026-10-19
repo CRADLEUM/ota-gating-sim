@@ -1,0 +1,110 @@
+{
+  "generated_utc": "2026-10-09T21:28:15+00:00",
+  "campaigns_post_2010": 15300,
+  "campaigns_software_remedy": 1376,
+  "study_set": 176,
+  "ota_explicit": 162,
+  "ads_fleet_remote_only": 14,
+  "by_type": {
+    "V": 159,
+    "E": 17
+  },
+  "by_ownership_proposed": {
+    "consumer": {
+      "campaigns": 155,
+      "units": 29881557,
+      "dual_path_share": 0.594,
+      "completion_at_filing_share": 0.019,
+      "with_quarterly": 136,
+      "q1_share_median": 0.738,
+      "q4_share_median": 0.945,
+      "q6_share_median": 0.973,
+      "last_share_median": 0.962,
+      "share_reaching_95_by_q6": 0.522,
+      "quarters_to_95_median": 2.0
+    },
+    "manufacturer_operated": {
+      "campaigns": 15,
+      "units": 12057,
+      "dual_path_share": 0.0,
+      "completion_at_filing_share": 0.733,
+      "with_quarterly": 11,
+      "q1_share_median": 1.0,
+      "q4_share_median": 0.248,
+      "q6_share_median": 0.248,
+      "last_share_median": 1.0,
+      "share_reaching_95_by_q6": 0.909,
+      "quarters_to_95_median": 1.0
+    },
+    "third_party_fleet": {
+      "campaigns": 6,
+      "units": 7881,
+      "dual_path_share": 0.333,
+      "completion_at_filing_share": 0.0,
+      "with_quarterly": 6,
+      "q1_share_median": 0.588,
+      "q4_share_median": 0.957,
+      "q6_share_median": null,
+      "last_share_median": 0.957,
+      "share_reaching_95_by_q6": 0.5,
+      "quarters_to_95_median": 1.0
+    }
+  },
+  "by_ownership_proposed_remote_only": {
+    "consumer": {
+      "campaigns": 63,
+      "units": 12696245,
+      "dual_path_share": 0.0,
+      "completion_at_filing_share": 0.048,
+      "with_quarterly": 56,
+      "q1_share_median": 0.912,
+      "q4_share_median": 0.982,
+      "q6_share_median": 0.99,
+      "last_share_median": 0.995,
+      "share_reaching_95_by_q6": 0.839,
+      "quarters_to_95_median": 2.0
+    },
+    "manufacturer_operated": {
+      "campaigns": 15,
+      "units": 12057,
+      "dual_path_share": 0.0,
+      "completion_at_filing_share": 0.733,
+      "with_quarterly": 11,
+      "q1_share_median": 1.0,
+      "q4_share_median": 0.248,
+      "q6_share_median": 0.248,
+      "last_share_median": 1.0,
+      "share_reaching_95_by_q6": 0.909,
+      "quarters_to_95_median": 1.0
+    },
+    "third_party_fleet": {
+      "campaigns": 4,
+      "units": 5362,
+      "dual_path_share": 0.0,
+      "completion_at_filing_share": 0.0,
+      "with_quarterly": 4,
+      "q1_share_median": 0.756,
+      "q4_share_median": null,
+      "q6_share_median": null,
+      "last_share_median": 0.756,
+      "share_reaching_95_by_q6": 0.5,
+      "quarters_to_95_median": 1.0
+    }
+  },
+  "by_manufacturer_top": {
+    "Tesla, Inc.": 32,
+    "Ford Motor Company": 23,
+    "General Motors, LLC": 16,
+    "Lucid USA, Inc.": 11,
+    "Hyundai Motor America": 10,
+    "Rivian Automotive, LLC": 6,
+    "Volvo Car USA, LLC": 5,
+    "Waymo LLC": 5,
+    "Zoox, Inc.": 5,
+    "Mercedes-Benz USA, LLC": 4,
+    "Polestar Automotive USA, Inc.": 4,
+    "Nissan North America, Inc.": 4
+  },
+  "classifier": "whole-word manufacturer-name match (v2, 2026-10-09); OTA regex bounded on both ends",
+  "status": "proposed classification; author sign-off (D4) required before use"
+}

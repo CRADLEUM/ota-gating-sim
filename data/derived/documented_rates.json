@@ -1,0 +1,148 @@
+{
+  "note": "Documented values from published reports and vendor specifications, used as sweep anchors where the open tile data cannot separate the link type. Not measured by this project. Verify the primary Ookla report page before citing; the figures below were read on 2026-10-08 from secondary coverage of Ookla's 2025 Global Satellite Broadband Performance Report.",
+  "satellite": {
+    "provider": "Starlink",
+    "region": "United States",
+    "period": "2025",
+    "down_mbps_median": 117.74,
+    "up_mbps_median": 16.91,
+    "source": "Ookla, 2025 Global Satellite Broadband Performance Report",
+    "secondary_coverage": [
+      "https://www.telecompetitor.com/starlink-nearing-full-fcc-broadband-compliance-ookla-report/",
+      "https://broadbandbreakfast.com/starlink-speeds-improved-in-second-half-of-2025-ookla/"
+    ],
+    "earlier_point": {"period": "2025 Q1", "down_mbps_median": 104.71, "source": "Ookla Starlink US performance, Q1 2025"},
+    "in_flight_measurement": {
+      "item": "Starlink Mini terminal mounted on a rotary-wing UAV (DroneBase X8-1000 Pro RTK), rural site near Catania, hover at 20 m",
+      "down_mbps_max_hover": 90,
+      "up_mbps_saturation": 30,
+      "rtt_ms_typical": "40 to 50, spikes to 140 every ~13 s (handovers)",
+      "flight_time_reduction_pct": 8,
+      "source": "M. Figaro et al., Experimental Evaluation of a UAV-Mounted LEO Satellite Backhaul for Emergency Connectivity, ICNC 2026, arXiv:2601.03958",
+      "read": "2026-10-09",
+      "note": "shows the documented satellite median is reachable from an airborne terminal; the uplink saturates at the satellite link"
+    }
+  },
+  "peer_links": {
+    "note": "Documented vehicle-to-vehicle and drone-to-drone link rates for the gossip (peer) path. Spec figures are physical-layer rates from the standard or vendor 'up to' figures; measured figures are field results with their test conditions. No 5G NR sidelink field-measured throughput was found (2024 to 2025 reports are interoperability tests), so NR V2X is not used. The deployed drone dock systems have no aircraft-to-aircraft data link; the drone peer rates are the radios that would have to be added.",
+    "ground_vehicle": [
+      {
+        "key": "dsrc_80211p",
+        "technology": "IEEE 802.11p (DSRC / ITS-G5)",
+        "kind": "spec",
+        "channel_mhz": 10,
+        "phy_rates_mbps": [3, 4.5, 6, 9, 12, 18, 24, 27],
+        "default_mbps": 6,
+        "alternative_mbps": 18,
+        "sources": [
+          "J. B. Kenney, Dedicated Short-Range Communications (DSRC) Standards in the United States, Proc. IEEE 99(7):1162-1182, 2011, doi:10.1109/JPROC.2011.2132790 (rate set on a 10 MHz channel)",
+          "R. Molina-Masegosa and J. Gozalvez, LTE-V for Sidelink 5G V2X Vehicular Communications, IEEE Veh. Technol. Mag., 2017, ieeexplore 8080373 (802.11p 'default 6Mbps data rate' and the 18 Mbps configuration)"
+        ],
+        "read": "2026-10-09"
+      },
+      {
+        "key": "ltev2x_pc5",
+        "technology": "LTE-V2X sidelink, PC5, 3GPP Release 14",
+        "kind": "measured_field",
+        "channel_mhz": 20,
+        "modulation": "QPSK or 16-QAM (64-QAM from Release 15)",
+        "mean_mbps": 0.72,
+        "peak_mbps": 2.6,
+        "conditions": "four nodes (three vehicles, one roadside unit) sharing the channel, commercial Cohda MK6 radios, 20 MHz, MCS automatic, 20 dBm, retransmission on, iperf UDP offered load 5 Mbps per client; the peak is read from the throughput trace figure, so it is approximate; the offered-load cap makes these lower bounds on link capacity",
+        "sources": [
+          "B. Wu et al., CooperScene: Multi-Modal Cooperative Autonomy Benchmark with C-V2X Communication Characterization, Univ. of California Riverside, arXiv:2606.31219, 2026 (Table 6: 0.72 Mbps; Fig. 5: peak about 2.6 Mbps; Tables 7 and 8 and Appendix B.2 for the radio configuration)",
+          "M. H. Castaneda Garcia et al., A Tutorial on 5G NR V2X Communications, IEEE Commun. Surveys Tuts. 23(3):1972-2026, 2021, doi:10.1109/COMST.2021.3057017 (channel widths and modulation; no single peak figure is stated)"
+        ],
+        "read": "2026-10-09"
+      },
+      {
+        "key": "nr_v2x",
+        "technology": "5G NR sidelink, 3GPP Release 16",
+        "kind": "not_used",
+        "note": "No field-measured throughput figure found; 2024 reports (Keysight, Ettifos, Autotalks) are physical-layer interoperability tests. The standard gives a rate formula (TS 38.306) rather than a figure."
+      }
+    ],
+    "drone": [
+      {
+        "key": "uav_mesh_silvus_sc4200ep",
+        "technology": "Silvus StreamCaster 4200 Enhanced Plus, 2x2 MIMO MANET radio (flown on UAVs; Blue UAS listed)",
+        "kind": "spec",
+        "max_mbps_adaptive": 100,
+        "channel_mhz": [20, 10, 5],
+        "latency_ms_avg_20mhz": 7,
+        "source": "Silvus datasheet, https://silvustechnologies.com/sc4200ep-datasheet, 'DATA RATE Up to 100Mbps (Adaptive)'",
+        "read": "2026-10-09"
+      },
+      {
+        "key": "uav_mesh_doodle_labs",
+        "technology": "Doodle Labs Mesh Rider radios (Nano2, Mini, OEM, Wearable)",
+        "kind": "spec",
+        "max_mbps": 80,
+        "source": "Doodle Labs, High throughput capability page, https://doodlelabs.com/capabilities/high-throughput/, 'Up to 80 Mbps (Nano2, Mini, OEM, Wearable)'; conditions not stated on the page",
+        "read": "2026-10-09"
+      },
+      {
+        "key": "uav_sdr_mesh_demo",
+        "technology": "Research demonstration: four-UAV fully connected mesh on RFSoC software-defined radios",
+        "kind": "demo",
+        "per_link_mbps": 99.84,
+        "conditions": "16-QAM over 37.44 MHz per link in the 900 MHz band, twelve always-on 2x2 MIMO links, aggregate about 1.2 Gbps; testbed demonstration",
+        "source": "H. Nouri, G. Sklivanitis, D. A. Pados, E. S. Bentley, Demonstration of a 1.2 Gbps Always-on Fully-Connected Mesh Network with RFSoC SDRs, FAU and AFRL, arXiv:2603.06667, 2026",
+        "read": "2026-10-09"
+      }
+    ]
+  },
+  "dock_local_link": {
+    "description": "Wired dock uplink on every DJI dock generation",
+    "spec": "10/100/1000 Mbps adaptive Ethernet",
+    "mbps_nominal": 1000,
+    "source": "data/derived/dock_specs.json"
+  },
+  "update_size_anchors": [
+    {
+      "item": "DJI dock aircraft firmware package (Matrice 3D, Dock 2 aircraft), version 13.00.0702",
+      "bytes": 415689300,
+      "gb": 0.416,
+      "source": "DroneDeploy Robotics Toolkit API reference, firmware-upgrade example (dock downloads the package from a URL)",
+      "url": "https://docs-automate.dronedeploy.com/robotics-toolkit/agent-plugins/dji/api-reference/firmware-upgrade",
+      "read": "2026-10-08"
+    },
+    {
+      "item": "DroneDeploy guidance for DJI dock and aircraft firmware updates",
+      "update_minutes_typical": 20,
+      "update_minutes_retry_threshold": 45,
+      "recommended_mbps_at_dock": 25,
+      "flight_blocked_until_complete": true,
+      "quotes": [
+        "Updates usually complete in about 20 minutes.",
+        "We recommend having greater than 25Mbps upload and download at the dock.",
+        "If the update does not finish after 45 minutes or fails, then try the update again.",
+        "No, the dock and aircraft are not available for flight until the firmware update is fully complete."
+      ],
+      "implied_gb_at_25mbps_20min": 3.75,
+      "source": "DroneDeploy Help Center, Firmware update for docked drones, v2.2, updated about 10 months before 2026-10-08",
+      "url": "https://help.dronedeploy.com/hc/en-us/articles/34469636370711-Firmware-update-for-docked-drones",
+      "read": "2026-10-08"
+    }
+  ],
+  "install_time_documented": [
+    {"device": "DJI dock and aircraft (DroneDeploy guidance)", "minutes": 20, "note": "whole update, download plus install, dock and aircraft unavailable for flight until complete", "url": "https://help.dronedeploy.com/hc/en-us/articles/34469636370711-Firmware-update-for-docked-drones"},
+    {"device": "Tesla Model 3 (owner's manual, Software Updates)", "minutes": 30, "note": "install step only; some take longer; vehicle must be in Park and cannot be driven", "url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-A5A60CB3-7659-4B08-B2FD-AFD12C2D6EE1.html"}
+  ],
+  "consumer_vehicle_update_practice": {
+    "source": "Tesla Model 3 owner's manual, Software Updates page, read 2026-10-08",
+    "quotes": [
+      "In most cases, your vehicle must be connected to Wi-Fi to download the software update.",
+      "Although you can drive while the software update is being downloaded, doing so can interrupt the download if your vehicle loses the Wi-Fi connection.",
+      "You CANNOT drive while software is being installed.",
+      "On an as-needed basis, Tesla also sends software updates using a cellular connection.",
+      "Some software updates take approximately 30 minutes to complete (some may take longer). Model 3 must be in Park while the software is being updated.",
+      "When Automatically Install Updates is enabled, your vehicle will download updates automatically and install them at 2 a.m. as long as: Model 3 is parked at the location you have set as Home."
+    ],
+    "reading": "A consumer vehicle has a de facto depot (home Wi-Fi) and a nightly window; the download is window-gated by Wi-Fi presence and resumable, the install is atomic. What the consumer class lacks is redeployment control, not a window."
+  },
+  "reference_rate_in_reviewed_paper": {
+    "mbps": 10,
+    "note": "The reviewed version converted delivery-minutes to bytes at 10 Mbps (75 MB per delivery-minute). Kept only for continuity."
+  }
+}

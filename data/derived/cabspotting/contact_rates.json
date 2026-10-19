@@ -1,0 +1,93 @@
+{
+  "generated_utc": "2026-10-09T15:40:32+00:00",
+  "source": "CRAWDAD epfl/mobility (Cabspotting), doi:10.15783/C7J010",
+  "cabs": 536,
+  "step_s": 30,
+  "max_gap_s": 300,
+  "days": 23.976041666666667,
+  "mean_online_cabs_per_step": 327.28782239728906,
+  "beta_definition": "contacts per on-line node per minute; transmission on every contact",
+  "ranges": {
+    "100m": {
+      "contact_events": 4493336,
+      "beta_per_min_all_hours": 0.79527,
+      "beta_per_min_daytime": 0.82158,
+      "beta_per_min_per_day_q10_q50_q90": [
+        0.69932,
+        0.81964,
+        0.84147
+      ],
+      "contact_duration_s": {
+        "q10": 30.0,
+        "q25": 30.0,
+        "q50": 60.0,
+        "q75": 90.0,
+        "q90": 330.0
+      },
+      "share_contacts_ge_60s": 0.637,
+      "beta_per_min_daytime_gated": {
+        "ge_1min": 0.52339,
+        "ge_2min": 0.20439,
+        "ge_5min": 0.10337,
+        "ge_10min": 0.042,
+        "ge_20min": 0.01315
+      },
+      "duration_bin_s": 30,
+      "duration_overflow_s": 3600
+    },
+    "300m": {
+      "contact_events": 15965386,
+      "beta_per_min_all_hours": 2.82571,
+      "beta_per_min_daytime": 2.94024,
+      "beta_per_min_per_day_q10_q50_q90": [
+        2.3203,
+        2.90544,
+        3.03164
+      ],
+      "contact_duration_s": {
+        "q10": 30.0,
+        "q25": 30.0,
+        "q50": 60.0,
+        "q75": 120.0,
+        "q90": 240.0
+      },
+      "share_contacts_ge_60s": 0.73,
+      "beta_per_min_daytime_gated": {
+        "ge_1min": 2.14552,
+        "ge_2min": 0.93526,
+        "ge_5min": 0.22491,
+        "ge_10min": 0.07467,
+        "ge_20min": 0.02064
+      },
+      "duration_bin_s": 30,
+      "duration_overflow_s": 3600
+    },
+    "1000m": {
+      "contact_events": 43766838,
+      "beta_per_min_all_hours": 7.74627,
+      "beta_per_min_daytime": 7.91266,
+      "beta_per_min_per_day_q10_q50_q90": [
+        6.28021,
+        7.82526,
+        8.58429
+      ],
+      "contact_duration_s": {
+        "q10": 30.0,
+        "q25": 60.0,
+        "q50": 180.0,
+        "q75": 300.0,
+        "q90": 540.0
+      },
+      "share_contacts_ge_60s": 0.844,
+      "beta_per_min_daytime_gated": {
+        "ge_1min": 6.68099,
+        "ge_2min": 5.20063,
+        "ge_5min": 2.31015,
+        "ge_10min": 0.63707,
+        "ge_20min": 0.08669
+      },
+      "duration_bin_s": 30,
+      "duration_overflow_s": 3600
+    }
+  }
+}

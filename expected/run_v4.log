@@ -1,0 +1,194 @@
+v4 MEASURED-INPUT model. R=60, N=500, H_max=360 min, seed=20260705, target=0.95.
+Rates (Mbps): fixed_conus=372, dock_ethernet=1000, mobile_chicago=297, mobile_conus=229, mobile_rural_wy=137, satellite_starlink=118, mobile_p10_conus=28
+  drone: agency=cincinnati-pd install=20 min r_bh=137 r_local=372 depot_rule=('all', None) beta=0.0015
+  av: agency=chicago install=30 min r_bh=297 r_local=372 depot_rule=('long', 120.0) beta=0.822
+
+TRANSFER TIME BY LINK TYPE at 0.42 GB (documented firmware package) and 4 GB (headline): minutes, then 'windows ok' = share of measured daytime stationary windows >= transfer + install, 'contacts ok' = share of measured 100m contacts >= transfer (Cabspotting, daytime beta 0.822/min)
+   drone S=0.42 GB, install 20 min:
+      cellular backhaul         137.00 Mbps  transfer   0.41 min  windows ok 0.97
+      satellite, documented     118.00 Mbps  transfer   0.47 min  windows ok 0.97
+      poor cellular, p10         28.00 Mbps  transfer   2.00 min  windows ok 0.97
+      local staging, fixed      372.00 Mbps  transfer   0.15 min  windows ok 0.98
+      dock Ethernet, spec      1000.00 Mbps  transfer   0.06 min  windows ok 0.98
+      UAV mesh radio, Doodle Labs   80.00 Mbps  transfer   0.70 min  (no contact data for docked fleets)
+      UAV mesh radio, Silvus    100.00 Mbps  transfer   0.56 min  (no contact data for docked fleets)
+   drone S=4.00 GB, install 20 min:
+      cellular backhaul         137.00 Mbps  transfer   3.89 min  windows ok 0.96
+      satellite, documented     118.00 Mbps  transfer   4.52 min  windows ok 0.96
+      poor cellular, p10         28.00 Mbps  transfer  19.05 min  windows ok 0.87
+      local staging, fixed      372.00 Mbps  transfer   1.43 min  windows ok 0.97
+      dock Ethernet, spec      1000.00 Mbps  transfer   0.53 min  windows ok 0.97
+      UAV mesh radio, Doodle Labs   80.00 Mbps  transfer   6.67 min  (no contact data for docked fleets)
+      UAV mesh radio, Silvus    100.00 Mbps  transfer   5.33 min  (no contact data for docked fleets)
+   av    S=0.42 GB, install 30 min:
+      cellular backhaul         297.00 Mbps  transfer   0.19 min  windows ok 0.45
+      satellite, documented     118.00 Mbps  transfer   0.47 min  windows ok 0.45
+      poor cellular, p10         28.00 Mbps  transfer   2.00 min  windows ok 0.44
+      local staging, fixed      372.00 Mbps  transfer   0.15 min  windows ok 0.45
+      LTE-V2X PC5, field mean     0.72 Mbps  transfer  77.78 min  contacts ok 0.000  beta_eff 0.0000/min
+      LTE-V2X PC5, field peak     2.60 Mbps  transfer  21.54 min  contacts ok 0.014  beta_eff 0.0112/min
+      802.11p default             6.00 Mbps  transfer   9.33 min  contacts ok 0.054  beta_eff 0.0447/min
+      802.11p top rate           27.00 Mbps  transfer   2.07 min  contacts ok 0.198  beta_eff 0.1623/min
+   av    S=4.00 GB, install 30 min:
+      cellular backhaul         297.00 Mbps  transfer   1.80 min  windows ok 0.44
+      satellite, documented     118.00 Mbps  transfer   4.52 min  windows ok 0.42
+      poor cellular, p10         28.00 Mbps  transfer  19.05 min  windows ok 0.34
+      local staging, fixed      372.00 Mbps  transfer   1.43 min  windows ok 0.45
+      LTE-V2X PC5, field mean     0.72 Mbps  transfer 740.74 min  contacts ok 0.000  beta_eff 0.0000/min
+      LTE-V2X PC5, field peak     2.60 Mbps  transfer 205.13 min  contacts ok 0.000  beta_eff 0.0000/min
+      802.11p default             6.00 Mbps  transfer  88.89 min  contacts ok 0.000  beta_eff 0.0000/min
+      802.11p top rate           27.00 Mbps  transfer  19.75 min  contacts ok 0.016  beta_eff 0.0132/min
+
+[drone] completion at S=4 GB by deadline (centralized / gossip / depot / hybrid), then T95 at 4 GB and S95 at 360 min
+   exp            H=60: 0.71/0.04/0.74/0.74   H=120: 0.91/0.05/0.93/0.93   H=360: 1.00/0.08/1.00/1.00
+                  T95: centralized=160min, gossip=none, depot=140min, hybrid=140min   S95: centralized=10.00, gossip=none, depot=10.00, hybrid=10.00
+                  baselines T95: nonatomic=140min bandwidth=120min
+   bootstrap      H=60: 0.99/0.05/1.00/1.00   H=120: 1.00/0.06/1.00/1.00   H=360: 1.00/0.08/1.00/1.00
+                  T95: centralized=60min, gossip=none, depot=50min, hybrid=50min   S95: centralized=10.00, gossip=none, depot=10.00, hybrid=10.00
+                  baselines T95: nonatomic=50min bandwidth=40min
+   replay 12:00   H=60: 0.98/0.00/0.99/0.99   H=120: 1.00/0.00/1.00/1.00   H=360: 1.00/0.00/1.00/1.00
+                  T95: centralized=60min, gossip=none, depot=50min, hybrid=50min   S95: centralized=10.00, gossip=none, depot=10.00, hybrid=10.00
+                  baselines T95: nonatomic=50min bandwidth=40min
+   v3-style margin crossover at 360 min (depot beats best gating-unaware by >0.15): none GB
+   selector disagreement at 4 GB (model says push meets 0.95, atomic completion does not): window-aware non-atomic 50 min; bandwidth-only 40 to 50 min
+
+[av] completion at S=4 GB by deadline (centralized / gossip / depot / hybrid), then T95 at 4 GB and S95 at 360 min
+   exp            H=60: 0.38/0.38/0.29/0.38   H=120: 0.52/0.52/0.36/0.52   H=360: 0.82/0.83/0.58/0.82
+                  T95: centralized=none, gossip=none, depot=none, hybrid=none   S95: centralized=none, gossip=none, depot=none, hybrid=none
+                  baselines T95: nonatomic=none bandwidth=none
+   bootstrap      H=60: 0.79/0.79/0.68/0.79   H=120: 0.92/0.92/0.75/0.92   H=360: 1.00/1.00/0.91/1.00
+                  T95: centralized=160min, gossip=150min, depot=none, hybrid=150min   S95: centralized=10.00, gossip=10.00, depot=none, hybrid=10.00
+                  baselines T95: nonatomic=150min bandwidth=90min
+   replay 12:00   H=60: 0.79/0.80/0.71/0.79   H=120: 0.92/0.93/0.77/0.92   H=360: 0.99/0.99/0.88/0.99
+                  T95: centralized=150min, gossip=150min, depot=none, hybrid=150min   S95: centralized=10.00, gossip=10.00, depot=none, hybrid=10.00
+                  baselines T95: nonatomic=150min bandwidth=80min
+   v3-style margin crossover at 360 min (depot beats best gating-unaware by >0.15): none GB
+   selector disagreement at 4 GB (model says push meets 0.95, atomic completion does not): window-aware non-atomic 150 min; bandwidth-only 90 to 150 min
+
+REPLAY by campaign start hour: T95 at 4 GB (centralized / depot / hybrid), all device-days [active only]:
+   drone 08:00  centralized=50min[60min]  depot=40min[50min]  hybrid=40min[50min]   device-days=3210 active=1930
+   drone 12:00  centralized=60min[60min]  depot=50min[60min]  hybrid=50min[60min]   device-days=3210 active=2065
+   drone 16:00  centralized=60min[60min]  depot=50min[60min]  hybrid=50min[60min]   device-days=3210 active=2045
+   drone 20:00  centralized=60min[60min]  depot=50min[60min]  hybrid=50min[60min]   device-days=3210 active=1809
+   av    08:00  centralized=150min[200min]  depot=none[none]  hybrid=150min[200min]   device-days=14500 active=7915
+   av    12:00  centralized=150min[190min]  depot=none[none]  hybrid=150min[190min]   device-days=14500 active=9384
+   av    16:00  centralized=190min[220min]  depot=none[none]  hybrid=190min[220min]   device-days=14500 active=9160
+   av    20:00  centralized=100min[140min]  depot=240min[310min]  hybrid=100min[140min]   device-days=14500 active=6093
+
+INSTALL TIME (bootstrap windows): T95 at 4 GB vs install minutes:
+   drone install=  5 min -> centralized=20min  depot=20min  hybrid=20min
+   drone install= 10 min -> centralized=30min  depot=30min  hybrid=30min
+   drone install= 20 min -> centralized=60min  depot=50min  hybrid=50min
+   drone install= 30 min -> centralized=80min  depot=70min  hybrid=70min
+   drone install= 45 min -> centralized=110min  depot=110min  hybrid=110min
+   drone install= 60 min -> centralized=170min  depot=160min  hybrid=160min
+   av    install=  5 min -> centralized=40min  depot=none  hybrid=40min
+   av    install= 10 min -> centralized=60min  depot=none  hybrid=60min
+   av    install= 20 min -> centralized=100min  depot=none  hybrid=100min
+   av    install= 30 min -> centralized=150min  depot=none  hybrid=150min
+   av    install= 45 min -> centralized=230min  depot=none  hybrid=230min
+   av    install= 60 min -> centralized=310min  depot=none  hybrid=310min
+
+BACKHAUL (bootstrap windows): T95 at 4 GB vs backhaul Mbps (centralized push; hybrid):
+   drone backhaul=    5 Mbps -> centralized=none  hybrid=50min
+   drone backhaul=   10 Mbps -> centralized=220min  hybrid=50min
+   drone backhaul=   28 Mbps -> centralized=90min  hybrid=50min
+   drone backhaul=   50 Mbps -> centralized=70min  hybrid=50min
+   drone backhaul=  118 Mbps -> centralized=60min  hybrid=50min
+   drone backhaul=  137 Mbps -> centralized=50min  hybrid=50min
+   drone backhaul=  297 Mbps -> centralized=50min  hybrid=50min
+   av    backhaul=    5 Mbps -> centralized=none  hybrid=none
+   av    backhaul=   10 Mbps -> centralized=none  hybrid=360min
+   av    backhaul=   28 Mbps -> centralized=240min  hybrid=230min
+   av    backhaul=   50 Mbps -> centralized=200min  hybrid=190min
+   av    backhaul=  118 Mbps -> centralized=160min  hybrid=160min
+   av    backhaul=  137 Mbps -> centralized=160min  hybrid=160min
+   av    backhaul=  297 Mbps -> centralized=150min  hybrid=150min
+
+GATE ISOLATION (bootstrap windows scaled, all rates fixed): T95 at 4 GB vs stationary-window scale:
+   drone scale=0.25 -> centralized=140min  depot=110min  hybrid=110min
+   drone scale=0.50 -> centralized=70min  depot=60min  hybrid=60min
+   drone scale=0.75 -> centralized=60min  depot=50min  hybrid=50min
+   drone scale=1.00 -> centralized=60min  depot=50min  hybrid=50min
+   drone scale=1.50 -> centralized=50min  depot=40min  hybrid=40min
+   drone scale=2.00 -> centralized=40min  depot=40min  hybrid=40min
+   av    scale=0.25 -> centralized=none  depot=none  hybrid=none
+   av    scale=0.50 -> centralized=240min  depot=none  hybrid=240min
+   av    scale=0.75 -> centralized=190min  depot=none  hybrid=190min
+   av    scale=1.00 -> centralized=150min  depot=none  hybrid=150min
+   av    scale=1.50 -> centralized=120min  depot=none  hybrid=120min
+   av    scale=2.00 -> centralized=90min  depot=300min  hybrid=90min
+
+REACH (av, bootstrap windows): T95 at 4 GB vs probability that a stationary window has local staging, at the metro cellular backhaul (297 Mbps) and at the poor-cellular stress rate (28 Mbps, CONUS mobile 10th percentile):
+   backhaul 297 Mbps  p=0.0 -> centralized=160min  depot=none  hybrid=160min
+   backhaul 297 Mbps  p=0.2 -> centralized=160min  depot=none  hybrid=160min
+   backhaul 297 Mbps  p=0.4 -> centralized=160min  depot=none  hybrid=160min
+   backhaul 297 Mbps  p=0.6 -> centralized=160min  depot=none  hybrid=160min
+   backhaul 297 Mbps  p=0.8 -> centralized=160min  depot=none  hybrid=160min
+   backhaul 297 Mbps  p=1.0 -> centralized=160min  depot=150min  hybrid=150min
+   backhaul  28 Mbps  p=0.0 -> centralized=240min  depot=none  hybrid=240min
+   backhaul  28 Mbps  p=0.2 -> centralized=240min  depot=none  hybrid=220min
+   backhaul  28 Mbps  p=0.4 -> centralized=240min  depot=none  hybrid=200min
+   backhaul  28 Mbps  p=0.6 -> centralized=240min  depot=none  hybrid=180min
+   backhaul  28 Mbps  p=0.8 -> centralized=240min  depot=none  hybrid=160min
+   backhaul  28 Mbps  p=1.0 -> centralized=240min  depot=150min  hybrid=150min
+
+GOSSIP CONTACT RATE (bootstrap windows): T95 and completion at 360 min vs beta (Cabspotting, 100 m, daytime; gated values count only contacts at least that long):
+   drone beta=0.0015/min (v3 assumption (drone) ) -> T95=none  completion=0.08
+   drone beta=0.0060/min (v3 assumption (av)    ) -> T95=none  completion=0.28
+   drone beta=0.0130/min (ge_20min              ) -> T95=none  completion=0.81
+   drone beta=0.0420/min (ge_10min              ) -> T95=170min  completion=1.00
+   drone beta=0.1030/min (ge_5min               ) -> T95=90min  completion=1.00
+   drone beta=0.2040/min (ge_2min               ) -> T95=60min  completion=1.00
+   drone beta=0.5230/min (ge_1min               ) -> T95=50min  completion=1.00
+   drone beta=0.8220/min (every_contact         ) -> T95=50min  completion=1.00
+   av    beta=0.0015/min (v3 assumption (drone) ) -> T95=none  completion=0.08
+   av    beta=0.0060/min (v3 assumption (av)    ) -> T95=none  completion=0.26
+   av    beta=0.0130/min (ge_20min              ) -> T95=none  completion=0.74
+   av    beta=0.0420/min (ge_10min              ) -> T95=230min  completion=0.99
+   av    beta=0.1030/min (ge_5min               ) -> T95=180min  completion=1.00
+   av    beta=0.2040/min (ge_2min               ) -> T95=160min  completion=1.00
+   av    beta=0.5230/min (ge_1min               ) -> T95=150min  completion=1.00
+   av    beta=0.8220/min (every_contact         ) -> T95=150min  completion=1.00
+
+PEER LINK (av, bootstrap windows): gossip T95 when the contact rate counts only measured contacts long enough to carry the whole image at a documented vehicle-to-vehicle rate (Cabspotting, 100m, daytime):
+   S=0.42 GB  LTE-V2X PC5, field mean    0.72 Mbps: transfer   77.8 min, contacts ok 0.000, beta_eff=0.0000/min -> T95=none  completion=0.05
+   S=0.42 GB  LTE-V2X PC5, field peak    2.60 Mbps: transfer   21.5 min, contacts ok 0.014, beta_eff=0.0112/min -> T95=none  completion=0.63
+   S=0.42 GB  802.11p default            6.00 Mbps: transfer    9.3 min, contacts ok 0.054, beta_eff=0.0447/min -> T95=220min  completion=1.00
+   S=0.42 GB  802.11p top rate          27.00 Mbps: transfer    2.1 min, contacts ok 0.198, beta_eff=0.1623/min -> T95=160min  completion=1.00
+   S=4.00 GB  LTE-V2X PC5, field mean    0.72 Mbps: transfer  740.7 min, contacts ok 0.000, beta_eff=0.0000/min -> T95=none  completion=0.05
+   S=4.00 GB  LTE-V2X PC5, field peak    2.60 Mbps: transfer  205.1 min, contacts ok 0.000, beta_eff=0.0000/min -> T95=none  completion=0.05
+   S=4.00 GB  802.11p default            6.00 Mbps: transfer   88.9 min, contacts ok 0.000, beta_eff=0.0000/min -> T95=none  completion=0.05
+   S=4.00 GB  802.11p top rate          27.00 Mbps: transfer   19.8 min, contacts ok 0.016, beta_eff=0.0132/min -> T95=none  completion=0.75
+   drone: no contact data for docked fleets; at the documented mesh-radio rates a 4 GB image needs 6.7 min at 80 Mbps, 5.3 min at 100 Mbps of continuous contact, and the deployed dock systems have no aircraft-to-aircraft link
+
+AGENCY SPREAD (drone, bootstrap windows per agency): T95 at 4 GB:
+   cincinnati-pd                  -> centralized=60min  depot=50min  hybrid=50min
+   wichita-pd                     -> centralized=30min  depot=30min  hybrid=30min
+   denver-pd                      -> centralized=40min  depot=30min  hybrid=30min
+   castle-rock-pd-co              -> centralized=30min  depot=30min  hybrid=30min
+   cspd-real-time-crime-center    -> centralized=50min  depot=50min  hybrid=50min
+
+RESUMABILITY (exact engine, bootstrap windows, install atomic): T95 at 4 GB vs resumable fraction rho:
+   drone rho=0.00 -> centralized=60min  depot=50min
+   drone rho=0.25 -> centralized=50min  depot=50min
+   drone rho=0.50 -> centralized=50min  depot=50min
+   drone rho=0.75 -> centralized=50min  depot=50min
+   drone rho=1.00 -> centralized=50min  depot=50min
+   av    rho=0.00 -> centralized=160min  depot=none
+   av    rho=0.25 -> centralized=150min  depot=none
+   av    rho=0.50 -> centralized=150min  depot=none
+   av    rho=0.75 -> centralized=150min  depot=none
+   av    rho=1.00 -> centralized=150min  depot=none
+
+CHECKS (engine consistency; the first two are exact and should be 0, the others are statistical):
+   drone resumable engine at rho=0 vs main engine (centralized, depot, 4 GB): max |diff| = 0.0e+00
+   drone resumable engine at rho=1 vs window-aware non-atomic baseline (centralized): max |diff| = 0.0e+00
+   drone v3 stepped engine (1-min steps, own random stream) vs main engine at rho=0 (centralized): max |diff| = 0.012
+   av    resumable engine at rho=0 vs main engine (centralized, depot, 4 GB): max |diff| = 0.0e+00
+   av    resumable engine at rho=1 vs window-aware non-atomic baseline (centralized): max |diff| = 0.0e+00
+   av    v3 stepped engine (1-min steps, own random stream) vs main engine at rho=0 (centralized): max |diff| = 0.011
+   drone renewal approximation 1-(1-e^(-tau/m_s))^(H/(m_o+m_s)) vs exp-window simulation (centralized, 4 GB): |diff| at 360 min = 0.011; max |diff| beyond two cycles = 0.080; max |diff| overall = 0.219 (the form ignores the window under way at release and the deadline cut, so it is a long-horizon approximation)
+   av    renewal approximation 1-(1-e^(-tau/m_s))^(H/(m_o+m_s)) vs exp-window simulation (centralized, 4 GB): |diff| at 360 min = 0.002; max |diff| beyond two cycles = n/a (two cycles exceed the horizon); max |diff| overall = 0.154 (the form ignores the window under way at release and the deadline cut, so it is a long-horizon approximation)
+
+wrote results_v4.csv, sweeps_v4.csv, replay_v4.csv, crossover.png, drivers.png, sources.png

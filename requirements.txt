@@ -6,3 +6,9 @@
 # moved: pin to the versions above rather than accepting the new numbers.
 numpy>=1.17
 matplotlib>=3.3
+
+# The data pipeline under scripts/ (pull, derive, make_sim_inputs) also needs
+# pandas and pyarrow; the simulator and verify.py do not, since the compact
+# inputs in data/sim_inputs/ are committed.
+# pandas>=2.0
+# pyarrow>=14

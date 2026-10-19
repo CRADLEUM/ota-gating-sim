@@ -1,0 +1,235 @@
+{
+  "generated_utc": "2026-10-08T20:05:02+00:00",
+  "files": {
+    "fixed": "2026-04-01_performance_fixed_tiles.parquet",
+    "mobile": "2026-04-01_performance_mobile_tiles.parquet"
+  },
+  "license": "CC BY-NC-SA 4.0, Ookla Speedtest Open Data",
+  "regions": {
+    "conus": {
+      "fixed": {
+        "tiles": 1696869,
+        "tests": 17316353,
+        "down_mbps_median_tile": 302.3,
+        "down_mbps_median_test_weighted": 372.1,
+        "up_mbps_median_test_weighted": 149.8,
+        "down_mbps_p10_test_weighted": 121.6
+      },
+      "mobile": {
+        "tiles": 469590,
+        "tests": 1664508,
+        "down_mbps_median_tile": 176.4,
+        "down_mbps_median_test_weighted": 228.8,
+        "up_mbps_median_test_weighted": 19.8,
+        "down_mbps_p10_test_weighted": 28.2
+      },
+      "ratio_fixed_to_mobile_down_test_weighted": 1.63,
+      "bbox": [
+        -125.0,
+        24.5,
+        -66.9,
+        49.5
+      ]
+    },
+    "chicago_metro": {
+      "fixed": {
+        "tiles": 14885,
+        "tests": 257852,
+        "down_mbps_median_tile": 367.9,
+        "down_mbps_median_test_weighted": 392.8,
+        "up_mbps_median_test_weighted": 112.8,
+        "down_mbps_p10_test_weighted": 225.2
+      },
+      "mobile": {
+        "tiles": 6609,
+        "tests": 27585,
+        "down_mbps_median_tile": 260.6,
+        "down_mbps_median_test_weighted": 296.9,
+        "up_mbps_median_test_weighted": 25.8,
+        "down_mbps_p10_test_weighted": 55.1
+      },
+      "ratio_fixed_to_mobile_down_test_weighted": 1.32,
+      "bbox": [
+        -88.3,
+        41.45,
+        -87.5,
+        42.2
+      ]
+    },
+    "cincinnati": {
+      "fixed": {
+        "tiles": 6020,
+        "tests": 65603,
+        "down_mbps_median_tile": 349.6,
+        "down_mbps_median_test_weighted": 368.5,
+        "up_mbps_median_test_weighted": 265.6,
+        "down_mbps_p10_test_weighted": 196.2
+      },
+      "mobile": {
+        "tiles": 1626,
+        "tests": 4939,
+        "down_mbps_median_tile": 295.3,
+        "down_mbps_median_test_weighted": 378.5,
+        "up_mbps_median_test_weighted": 26.8,
+        "down_mbps_p10_test_weighted": 55.3
+      },
+      "ratio_fixed_to_mobile_down_test_weighted": 0.97,
+      "bbox": [
+        -84.9,
+        38.95,
+        -84.2,
+        39.4
+      ]
+    },
+    "wichita": {
+      "fixed": {
+        "tiles": 1941,
+        "tests": 16916,
+        "down_mbps_median_tile": 348.7,
+        "down_mbps_median_test_weighted": 379.9,
+        "up_mbps_median_test_weighted": 221.1,
+        "down_mbps_p10_test_weighted": 194.0
+      },
+      "mobile": {
+        "tiles": 717,
+        "tests": 2125,
+        "down_mbps_median_tile": 277.6,
+        "down_mbps_median_test_weighted": 274.7,
+        "up_mbps_median_test_weighted": 24.7,
+        "down_mbps_p10_test_weighted": 49.0
+      },
+      "ratio_fixed_to_mobile_down_test_weighted": 1.38,
+      "bbox": [
+        -97.6,
+        37.5,
+        -97.1,
+        37.85
+      ]
+    },
+    "denver": {
+      "fixed": {
+        "tiles": 5927,
+        "tests": 132420,
+        "down_mbps_median_tile": 440.8,
+        "down_mbps_median_test_weighted": 476.3,
+        "up_mbps_median_test_weighted": 228.9,
+        "down_mbps_p10_test_weighted": 290.3
+      },
+      "mobile": {
+        "tiles": 2664,
+        "tests": 10954,
+        "down_mbps_median_tile": 227.2,
+        "down_mbps_median_test_weighted": 290.9,
+        "up_mbps_median_test_weighted": 20.9,
+        "down_mbps_p10_test_weighted": 36.1
+      },
+      "ratio_fixed_to_mobile_down_test_weighted": 1.64,
+      "bbox": [
+        -105.25,
+        39.55,
+        -104.7,
+        39.95
+      ]
+    },
+    "colorado_springs": {
+      "fixed": {
+        "tiles": 2053,
+        "tests": 33549,
+        "down_mbps_median_tile": 424.7,
+        "down_mbps_median_test_weighted": 466.1,
+        "up_mbps_median_test_weighted": 226.7,
+        "down_mbps_p10_test_weighted": 251.9
+      },
+      "mobile": {
+        "tiles": 778,
+        "tests": 2159,
+        "down_mbps_median_tile": 214.0,
+        "down_mbps_median_test_weighted": 234.2,
+        "up_mbps_median_test_weighted": 13.4,
+        "down_mbps_p10_test_weighted": 37.5
+      },
+      "ratio_fixed_to_mobile_down_test_weighted": 1.99,
+      "bbox": [
+        -104.95,
+        38.7,
+        -104.6,
+        39.0
+      ]
+    },
+    "castle_rock": {
+      "fixed": {
+        "tiles": 506,
+        "tests": 7429,
+        "down_mbps_median_tile": 374.6,
+        "down_mbps_median_test_weighted": 465.7,
+        "up_mbps_median_test_weighted": 119.4,
+        "down_mbps_p10_test_weighted": 212.5
+      },
+      "mobile": {
+        "tiles": 125,
+        "tests": 385,
+        "down_mbps_median_tile": 233.1,
+        "down_mbps_median_test_weighted": 220.0,
+        "up_mbps_median_test_weighted": 10.4,
+        "down_mbps_p10_test_weighted": 67.8
+      },
+      "ratio_fixed_to_mobile_down_test_weighted": 2.12,
+      "bbox": [
+        -104.95,
+        39.3,
+        -104.75,
+        39.45
+      ]
+    },
+    "san_francisco": {
+      "fixed": {
+        "tiles": 554,
+        "tests": 55965,
+        "down_mbps_median_tile": 351.8,
+        "down_mbps_median_test_weighted": 364.0,
+        "up_mbps_median_test_weighted": 161.0,
+        "down_mbps_p10_test_weighted": 265.2
+      },
+      "mobile": {
+        "tiles": 464,
+        "tests": 5093,
+        "down_mbps_median_tile": 199.7,
+        "down_mbps_median_test_weighted": 270.6,
+        "up_mbps_median_test_weighted": 33.1,
+        "down_mbps_p10_test_weighted": 91.9
+      },
+      "ratio_fixed_to_mobile_down_test_weighted": 1.35,
+      "bbox": [
+        -122.55,
+        37.7,
+        -122.35,
+        37.85
+      ]
+    },
+    "rural_proxy_wyoming": {
+      "fixed": {
+        "tiles": 5859,
+        "tests": 36050,
+        "down_mbps_median_tile": 202.1,
+        "down_mbps_median_test_weighted": 324.7,
+        "up_mbps_median_test_weighted": 73.6,
+        "down_mbps_p10_test_weighted": 62.5
+      },
+      "mobile": {
+        "tiles": 1351,
+        "tests": 2976,
+        "down_mbps_median_tile": 119.2,
+        "down_mbps_median_test_weighted": 137.5,
+        "up_mbps_median_test_weighted": 13.1,
+        "down_mbps_p10_test_weighted": 21.3
+      },
+      "ratio_fixed_to_mobile_down_test_weighted": 2.36,
+      "bbox": [
+        -111.05,
+        41.0,
+        -104.05,
+        45.0
+      ]
+    }
+  }
+}

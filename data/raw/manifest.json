@@ -1,0 +1,436 @@
+{
+  "note": "raw data provenance; files themselves are not in git",
+  "entries": [
+    {
+      "source": "cabspotting",
+      "file": "data/raw/cabspotting/cabspottingdata.tar.gz",
+      "url": "manual download, see note",
+      "bytes": 95085833,
+      "sha256": "bfbb8e11c9ba3b02c561ce3b50336a27d665ecbbcf8a778c2bc08d1ace1c5fc2",
+      "pulled_utc": "2026-10-08T20:35:18+00:00",
+      "note": "CRAWDAD epfl/mobility via IEEE DataPort, author login, browser download 2026-10-08, doi:10.15783/C7J010"
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-03.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-03T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-04T00%3A00%3A00%27",
+      "bytes": 4648062,
+      "sha256": "7e5813eab009e030e0c9c78773069cc2408417ba66ebdb59427ae97c508cd10e",
+      "pulled_utc": "2026-10-08T19:49:18+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 22671
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-04.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-04T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-05T00%3A00%3A00%27",
+      "bytes": 4540761,
+      "sha256": "86437ef554a7f0ec7f697b811ce1b39e1710e7e7aa62585d3c418341702c2433",
+      "pulled_utc": "2026-10-08T19:49:28+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 22155
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-05.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-05T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-06T00%3A00%3A00%27",
+      "bytes": 4450528,
+      "sha256": "c7352c1b8151db5c979c4942a8a1b4c89fdcfa1f97b3194a574733ab094a3340",
+      "pulled_utc": "2026-10-08T19:49:33+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 21710
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-06.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-06T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-07T00%3A00%3A00%27",
+      "bytes": 4492944,
+      "sha256": "7e5cd7935d0e8c8ae1f2f6aa2eef3acd4ce9b6d4505ec57cb7a82d5c9a74f28a",
+      "pulled_utc": "2026-10-08T19:49:38+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 21914
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-07.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-07T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-08T00%3A00%3A00%27",
+      "bytes": 4350041,
+      "sha256": "2de4ad2147adae6d89d0cf59934f8001606c193b22e65866bb8cc134330372e3",
+      "pulled_utc": "2026-10-08T19:49:43+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 21227
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-08.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-08T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-09T00%3A00%3A00%27",
+      "bytes": 3554857,
+      "sha256": "2194dbe349dcc9146187042206ca3313f642690767d5eddb9b31296babc87d64",
+      "pulled_utc": "2026-10-08T19:50:04+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 17349
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-09.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-09T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-10T00%3A00%3A00%27",
+      "bytes": 3043038,
+      "sha256": "c829a1aa6074828d07c7dd5d766c8bbd8ae57f6c117b0b2a842cd823e408e595",
+      "pulled_utc": "2026-10-08T19:50:09+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 14842
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-10.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-10T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-11T00%3A00%3A00%27",
+      "bytes": 3754211,
+      "sha256": "3f2b34488f09f8fc2036ad04816991f153974b23d36ef97bd3b6d312b707c82c",
+      "pulled_utc": "2026-10-08T19:50:26+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 18316
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-11.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-11T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-12T00%3A00%3A00%27",
+      "bytes": 4076516,
+      "sha256": "77a69710028bc258b9c1e024481fbb935ec51d1b8d42ba2e744cd817a9807110",
+      "pulled_utc": "2026-10-08T19:50:48+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 19889
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-12.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-12T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-13T00%3A00%3A00%27",
+      "bytes": 4448572,
+      "sha256": "b9dce70960a18e7b97fb1112e66438fd881dd0abdcea1bdd685ddc02dd44edc7",
+      "pulled_utc": "2026-10-08T19:51:04+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 21705
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-13.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-13T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-14T00%3A00%3A00%27",
+      "bytes": 4862780,
+      "sha256": "827eb8e774a696246b7df3216690393aa63c0ebd67eba4b9fc36be286fd662ab",
+      "pulled_utc": "2026-10-08T19:51:15+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 23717
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-14.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-14T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-15T00%3A00%3A00%27",
+      "bytes": 4509537,
+      "sha256": "206653ac684ccc105dbf0961a2238b752d2dcebb9f54d97e0b36d9b20d5c728b",
+      "pulled_utc": "2026-10-08T19:51:20+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 22003
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-15.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-15T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-16T00%3A00%3A00%27",
+      "bytes": 3442400,
+      "sha256": "79cd268ae2954c73fef73dc641fe0faf0ea67c963866d41161141d0cd86bedd4",
+      "pulled_utc": "2026-10-08T19:51:28+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 16803
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-16.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-16T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-17T00%3A00%3A00%27",
+      "bytes": 3195982,
+      "sha256": "cae357419775309ea925ae8ace7fe7af16b1f3d6c64a5b02db824d17975e53d9",
+      "pulled_utc": "2026-10-08T19:51:45+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 15591
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-17.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-17T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-18T00%3A00%3A00%27",
+      "bytes": 3859540,
+      "sha256": "4153eaacae2dd1a0e86b68ed50e1154fecbecbdf9932f6803460969b59cd6d0c",
+      "pulled_utc": "2026-10-08T19:51:57+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 18828
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-18.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-18T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-19T00%3A00%3A00%27",
+      "bytes": 3966463,
+      "sha256": "55418516a8c0a589d372f15acaa995b052ccdf2a586effc894cc5a0ef1078f18",
+      "pulled_utc": "2026-10-08T19:52:06+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 19355
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-19.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-19T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-20T00%3A00%3A00%27",
+      "bytes": 4161299,
+      "sha256": "f23e396f8810f7265da2b4f52255c5ee452082b4c82f71e5b1b6d02751497265",
+      "pulled_utc": "2026-10-08T19:52:10+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 20308
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-20.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-20T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-21T00%3A00%3A00%27",
+      "bytes": 4403478,
+      "sha256": "147df533b608af051d259dc9c584a735723b7b3ebee3c1760a37968080d69805",
+      "pulled_utc": "2026-10-08T19:52:16+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 21486
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-21.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-21T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-22T00%3A00%3A00%27",
+      "bytes": 4258445,
+      "sha256": "42e0bbde3ccaa74f8f5c1d082ea8baf20014b277b269cad65ef34a960d753dae",
+      "pulled_utc": "2026-10-08T19:52:28+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 20779
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-22.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-22T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-23T00%3A00%3A00%27",
+      "bytes": 3359409,
+      "sha256": "f0d5e45171fc39e632ec10892bacffa6cd238319259d22ef83a18af65a5f1090",
+      "pulled_utc": "2026-10-08T19:52:35+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 16395
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-23.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-23T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-24T00%3A00%3A00%27",
+      "bytes": 3085467,
+      "sha256": "4239bff6e2c2a57569a1c5c5cf3f1b1de41620987553fa9b1b0df803c5b447a3",
+      "pulled_utc": "2026-10-08T19:52:54+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 15040
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-24.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-24T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-25T00%3A00%3A00%27",
+      "bytes": 3726332,
+      "sha256": "17cd4c69f7e4ed55dbea7c4cd9c2b9bcf97ed576edd10b53ca5cd7e2a5bf5d0a",
+      "pulled_utc": "2026-10-08T19:53:05+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 18180
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-25.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-25T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-26T00%3A00%3A00%27",
+      "bytes": 3916523,
+      "sha256": "9ee557401412ee7a16cebf4358ec581d5ca1125a11277fc02043d87df6d5dccf",
+      "pulled_utc": "2026-10-08T19:53:19+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 19115
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-26.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-26T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-27T00%3A00%3A00%27",
+      "bytes": 4338078,
+      "sha256": "bb40b5a8f863b9a112b2972a81eeff094862f5c858b67ff008153171b8dac44e",
+      "pulled_utc": "2026-10-08T19:53:32+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 21163
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-27.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-27T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-28T00%3A00%3A00%27",
+      "bytes": 4596493,
+      "sha256": "bbd95c7842e3921cdd0e743a5791b78099e3d632e58e2e69a669defd38336c5b",
+      "pulled_utc": "2026-10-08T19:53:47+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 22424
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-28.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-28T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-29T00%3A00%3A00%27",
+      "bytes": 4370907,
+      "sha256": "a9b63a71fcff75ae67c3362df9126001435cf9bef08e215ab438f14865fc667b",
+      "pulled_utc": "2026-10-08T19:53:57+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 21331
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-29.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-29T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-30T00%3A00%3A00%27",
+      "bytes": 2994125,
+      "sha256": "e23c4c59698ce0af1384ea882a37686b79e21193441139cb646667df81fda17e",
+      "pulled_utc": "2026-10-08T19:54:03+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 14616
+    },
+    {
+      "source": "chicago_taxi",
+      "file": "data/raw/chicago_taxi/taxi_2026-08-30.csv",
+      "url": "https://data.cityofchicago.org/resource/ajtu-isnz.csv?%24select=taxi_id%2Ctrip_start_timestamp%2Ctrip_end_timestamp%2Ctrip_seconds%2Ctrip_miles%2Cpickup_community_area%2Cdropoff_community_area&%24where=trip_start_timestamp+%3E%3D+%272026-08-30T00%3A00%3A00%27+AND+trip_start_timestamp+%3C+%272026-08-31T00%3A00%3A00%27",
+      "bytes": 3092623,
+      "sha256": "0572b03dfbdf0c9d2f96de39f3fabab67c6f391540be3bf53bb432cccaf60d28",
+      "pulled_utc": "2026-10-08T19:54:09+00:00",
+      "note": "one local day of trips, timestamps rounded to 15 min by the publisher",
+      "rows": 15081
+    },
+    {
+      "source": "dfr",
+      "file": "data/raw/dfr/castle-rock-pd-co.csv",
+      "url": "https://drones.ahdatalytics.com/data/csv/castle-rock-pd-co.csv",
+      "bytes": 189473,
+      "sha256": "5339bfc8ed41aa3cd8bcb2962d188d1aed47dd3c8c785579ea6521e4fbac8b9b",
+      "pulled_utc": "2026-10-08T19:48:46+00:00",
+      "note": "AH Datalytics per-agency flight log",
+      "rows": 1384,
+      "columns": "agency,source_flight_id,takeoff_utc,flight_date_local,landing_utc,duration_min,purpose,description,case_number,data_quality,source,calls_for_service,other_call_types,priority"
+    },
+    {
+      "source": "dfr",
+      "file": "data/raw/dfr/cincinnati-pd.csv",
+      "url": "https://drones.ahdatalytics.com/data/csv/cincinnati-pd.csv",
+      "bytes": 3051009,
+      "sha256": "fb3031291498f5256ceb47254cbdbde5b62b4e1d8430a2457c7eb5620bc285ac",
+      "pulled_utc": "2026-10-08T19:48:37+00:00",
+      "note": "AH Datalytics per-agency flight log",
+      "rows": 18258,
+      "columns": "agency,source_flight_id,takeoff_utc,flight_date_local,landing_utc,duration_min,purpose,description,case_number,data_quality,source"
+    },
+    {
+      "source": "dfr",
+      "file": "data/raw/dfr/cspd-real-time-crime-center.csv",
+      "url": "https://drones.ahdatalytics.com/data/csv/cspd-real-time-crime-center.csv",
+      "bytes": 2141269,
+      "sha256": "f149ddce6015e9300511debd162547a151444fc731eadf3f1a1de1b3ee64cc73",
+      "pulled_utc": "2026-10-08T19:48:49+00:00",
+      "note": "AH Datalytics per-agency flight log",
+      "rows": 10450,
+      "columns": "agency,source_flight_id,takeoff_utc,flight_date_local,landing_utc,duration_min,purpose,description,case_number,data_quality,source"
+    },
+    {
+      "source": "dfr",
+      "file": "data/raw/dfr/denver-pd.csv",
+      "url": "https://drones.ahdatalytics.com/data/csv/denver-pd.csv",
+      "bytes": 329833,
+      "sha256": "5fb39660cc9507aea30649c1f56bd32a777d95e14cbef97c9b1a3e1c37bf0d09",
+      "pulled_utc": "2026-10-08T19:48:43+00:00",
+      "note": "AH Datalytics per-agency flight log",
+      "rows": 1901,
+      "columns": "agency,source_flight_id,takeoff_utc,flight_date_local,landing_utc,duration_min,purpose,description,case_number,data_quality,source,calls_for_service,priority"
+    },
+    {
+      "source": "dfr",
+      "file": "data/raw/dfr/wichita-pd.csv",
+      "url": "https://drones.ahdatalytics.com/data/csv/wichita-pd.csv",
+      "bytes": 1312187,
+      "sha256": "f55c69c9a2ed42b26610f30555989724ff59d5e5f385f1a4fdb2e8d1d1182c26",
+      "pulled_utc": "2026-10-08T19:48:41+00:00",
+      "note": "AH Datalytics per-agency flight log",
+      "rows": 6682,
+      "columns": "agency,source_flight_id,takeoff_utc,flight_date_local,landing_utc,duration_min,purpose,description,case_number,data_quality,source"
+    },
+    {
+      "source": "nhtsa",
+      "file": "data/raw/nhtsa/FLAT_RCL_Annual_Rpts.zip",
+      "url": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_Annual_Rpts.zip",
+      "bytes": 176150,
+      "sha256": "a0ba889ff51dfc9ebfcecbf083bf5cefcedf4f20a68ffc58460c26da11fb9d7b",
+      "pulled_utc": "2026-10-08T19:59:46+00:00",
+      "note": "NHTSA ODI recall data, US public domain"
+    },
+    {
+      "source": "nhtsa",
+      "file": "data/raw/nhtsa/FLAT_RCL_POST_2010.zip",
+      "url": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip",
+      "bytes": 14900207,
+      "sha256": "257e8c42030eee17d2af585ba5988dd8edde49ecd55b21eb27583d175cb7009b",
+      "pulled_utc": "2026-10-08T19:59:39+00:00",
+      "note": "NHTSA ODI recall data, US public domain"
+    },
+    {
+      "source": "nhtsa",
+      "file": "data/raw/nhtsa/FLAT_RCL_Qrtly_Rpts.zip",
+      "url": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_Qrtly_Rpts.zip",
+      "bytes": 1480615,
+      "sha256": "22912f534c35d28c61aeaf8997bd35359f1b31491e549ced795e0f513ec61b75",
+      "pulled_utc": "2026-10-08T19:59:42+00:00",
+      "note": "NHTSA ODI recall data, US public domain"
+    },
+    {
+      "source": "nhtsa",
+      "file": "data/raw/nhtsa/Import_Instructions_Recalls.pdf",
+      "url": "https://static.nhtsa.gov/odi/ffdd/rcl/Import_Instructions_Recalls.pdf",
+      "bytes": 1030032,
+      "sha256": "ff5c5297bfc5b9930de71f2d8a9f98f596f2aeb301b6eafe8cf3949907ede46b",
+      "pulled_utc": "2026-10-08T19:59:50+00:00",
+      "note": "NHTSA ODI recall data, US public domain"
+    },
+    {
+      "source": "nhtsa",
+      "file": "data/raw/nhtsa/RCL.txt",
+      "url": "https://static.nhtsa.gov/odi/ffdd/rcl/RCL.txt",
+      "bytes": 3053,
+      "sha256": "3438cc7e4131efa401dfe6437dbe035607e092c129155dfb411d459d58802203",
+      "pulled_utc": "2026-10-08T19:59:43+00:00",
+      "note": "NHTSA ODI recall data, US public domain"
+    },
+    {
+      "source": "nhtsa",
+      "file": "data/raw/nhtsa/RCL_Annual_Rpts.txt",
+      "url": "https://static.nhtsa.gov/odi/ffdd/rcl/RCL_Annual_Rpts.txt",
+      "bytes": 1635,
+      "sha256": "ff45c24d4474d5b2d9bc6b93f96fef1b0d227d5b2ca71f79c7980956fea4219a",
+      "pulled_utc": "2026-10-08T19:59:47+00:00",
+      "note": "NHTSA ODI recall data, US public domain"
+    },
+    {
+      "source": "nhtsa",
+      "file": "data/raw/nhtsa/RCL_Qtrly_Rpts.txt",
+      "url": "https://static.nhtsa.gov/odi/ffdd/rcl/RCL_Qtrly_Rpts.txt",
+      "bytes": 1244,
+      "sha256": "b76ab35073e3585a56912f058aa0a53dc865de68c8ea12b687faa32f3952c8bf",
+      "pulled_utc": "2026-10-08T19:59:44+00:00",
+      "note": "NHTSA ODI recall data, US public domain"
+    },
+    {
+      "source": "ookla",
+      "file": "data/raw/ookla/2026-04-01_performance_fixed_tiles.parquet",
+      "url": "https://ookla-open-data.s3.amazonaws.com/parquet/performance/type=fixed/year=2026/quarter=2/2026-04-01_performance_fixed_tiles.parquet",
+      "bytes": 353986294,
+      "sha256": "22509e191e69c65429a2fdd5c42c47a39d67c830846db62035154be1f515758c",
+      "pulled_utc": "2026-10-08T19:49:00+00:00",
+      "note": "Ookla Speedtest open data, CC BY-NC-SA 4.0, attribution required",
+      "year": 2026,
+      "quarter": 2,
+      "kind": "fixed"
+    },
+    {
+      "source": "ookla",
+      "file": "data/raw/ookla/2026-04-01_performance_mobile_tiles.parquet",
+      "url": "https://ookla-open-data.s3.amazonaws.com/parquet/performance/type=mobile/year=2026/quarter=2/2026-04-01_performance_mobile_tiles.parquet",
+      "bytes": 184560046,
+      "sha256": "c9e5c898b016457fe41ef0646b6490c6ba0921903d83ec9e581102c82736bbda",
+      "pulled_utc": "2026-10-08T19:49:41+00:00",
+      "note": "Ookla Speedtest open data, CC BY-NC-SA 4.0, attribution required",
+      "year": 2026,
+      "quarter": 2,
+      "kind": "mobile"
+    }
+  ]
+}

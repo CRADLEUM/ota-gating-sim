@@ -1,0 +1,500 @@
+{
+  "generated_utc": "2026-10-08T19:53:18+00:00",
+  "max_flight_min": 90.0,
+  "daytime_hours": [
+    6,
+    22
+  ],
+  "quantiles": [
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    0.95
+  ],
+  "agencies": {
+    "cincinnati-pd": {
+      "rows_raw": 18258,
+      "rows_used": 18214,
+      "date_first": "2025-03-19",
+      "date_last": "2026-09-03",
+      "source": {
+        "skydio_arcgis": 18214
+      },
+      "fleet_lower_bound_kmin": 6,
+      "share_consecutive_flights_overlapping": 0.403,
+      "agency_level_gap_min": {
+        "q05": 0.79,
+        "q10": 1.28,
+        "q25": 3.55,
+        "q50": 10.47,
+        "q75": 25.47,
+        "q90": 56.55,
+        "q95": 101.47,
+        "n": 10867,
+        "mean": 54.95
+      },
+      "kmin_fleet": {
+        "operation_min": {
+          "q05": 2.87,
+          "q10": 4.95,
+          "q25": 8.33,
+          "q50": 12.3,
+          "q75": 16.54,
+          "q90": 19.56,
+          "q95": 20.85,
+          "n": 18214,
+          "mean": 12.31
+        },
+        "stationary_all_min": {
+          "q05": 28.12,
+          "q10": 36.96,
+          "q25": 58.31,
+          "q50": 92.64,
+          "q75": 157.1,
+          "q90": 374.51,
+          "q95": 747.1,
+          "n": 18208,
+          "mean": 232.73
+        },
+        "stationary_daytime_min": {
+          "q05": 26.26,
+          "q10": 35.36,
+          "q25": 56.54,
+          "q50": 90.01,
+          "q75": 151.12,
+          "q90": 277.55,
+          "q95": 544.44,
+          "n": 11279,
+          "mean": 196.5
+        },
+        "stationary_daytime_share_ge_30min": 0.931,
+        "stationary_daytime_share_ge_60min": 0.726
+      },
+      "two_kmin_fleet": {
+        "operation_min": {
+          "q05": 2.87,
+          "q10": 4.95,
+          "q25": 8.33,
+          "q50": 12.3,
+          "q75": 16.54,
+          "q90": 19.56,
+          "q95": 20.85,
+          "n": 18214,
+          "mean": 12.31
+        },
+        "stationary_all_min": {
+          "q05": 80.95,
+          "q10": 101.57,
+          "q25": 142.63,
+          "q50": 212.51,
+          "q75": 382.91,
+          "q90": 877.23,
+          "q95": 1200.32,
+          "n": 18202,
+          "mean": 476.07
+        },
+        "stationary_daytime_min": {
+          "q05": 78.46,
+          "q10": 98.36,
+          "q25": 137.18,
+          "q50": 196.11,
+          "q75": 312.56,
+          "q90": 649.04,
+          "q95": 1082.42,
+          "n": 11279,
+          "mean": 405.51
+        },
+        "stationary_daytime_share_ge_30min": 0.998,
+        "stationary_daytime_share_ge_60min": 0.98
+      }
+    },
+    "wichita-pd": {
+      "rows_raw": 6682,
+      "rows_used": 6630,
+      "date_first": "2024-05-29",
+      "date_last": "2026-09-03",
+      "source": {
+        "skydio_arcgis": 6630
+      },
+      "fleet_lower_bound_kmin": 6,
+      "share_consecutive_flights_overlapping": 0.338,
+      "agency_level_gap_min": {
+        "q05": 0.81,
+        "q10": 1.2,
+        "q25": 2.41,
+        "q50": 15.87,
+        "q75": 143.87,
+        "q90": 664.5,
+        "q95": 1102.27,
+        "n": 4391,
+        "mean": 253.22
+      },
+      "kmin_fleet": {
+        "operation_min": {
+          "q05": 2.4,
+          "q10": 4.46,
+          "q25": 10.08,
+          "q50": 16.88,
+          "q75": 20.91,
+          "q90": 23.76,
+          "q95": 25.18,
+          "n": 6630,
+          "mean": 15.43
+        },
+        "stationary_all_min": {
+          "q05": 22.82,
+          "q10": 34.4,
+          "q25": 77.7,
+          "q50": 331.67,
+          "q75": 1126.87,
+          "q90": 2342.63,
+          "q95": 3658.98,
+          "n": 6624,
+          "mean": 1062.89
+        },
+        "stationary_daytime_min": {
+          "q05": 32.93,
+          "q10": 44.76,
+          "q25": 112.29,
+          "q50": 435.48,
+          "q75": 1270.0,
+          "q90": 2688.69,
+          "q95": 3762.82,
+          "n": 3963,
+          "mean": 1135.51
+        },
+        "stationary_daytime_share_ge_30min": 0.96,
+        "stationary_daytime_share_ge_60min": 0.844
+      },
+      "two_kmin_fleet": {
+        "operation_min": {
+          "q05": 2.4,
+          "q10": 4.46,
+          "q25": 10.08,
+          "q50": 16.88,
+          "q75": 20.91,
+          "q90": 23.76,
+          "q95": 25.18,
+          "n": 6630,
+          "mean": 15.43
+        },
+        "stationary_all_min": {
+          "q05": 73.75,
+          "q10": 103.64,
+          "q25": 284.81,
+          "q50": 1120.69,
+          "q75": 2237.15,
+          "q90": 4499.05,
+          "q95": 6858.89,
+          "n": 6618,
+          "mean": 2141.77
+        },
+        "stationary_daytime_min": {
+          "q05": 97.95,
+          "q10": 133.56,
+          "q25": 404.31,
+          "q50": 1208.99,
+          "q75": 2445.88,
+          "q90": 4638.71,
+          "q95": 7130.44,
+          "n": 3958,
+          "mean": 2209.01
+        },
+        "stationary_daytime_share_ge_30min": 1.0,
+        "stationary_daytime_share_ge_60min": 0.996
+      }
+    },
+    "denver-pd": {
+      "rows_raw": 1901,
+      "rows_used": 1900,
+      "date_first": "2025-10-06",
+      "date_last": "2026-09-02",
+      "source": {
+        "skydio_arcgis": 1842,
+        "flock_aerodome": 58
+      },
+      "fleet_lower_bound_kmin": 2,
+      "share_consecutive_flights_overlapping": 0.02,
+      "agency_level_gap_min": {
+        "q05": 1.33,
+        "q10": 2.42,
+        "q25": 7.68,
+        "q50": 23.52,
+        "q75": 59.36,
+        "q90": 758.66,
+        "q95": 1244.83,
+        "n": 1861,
+        "mean": 246.37
+      },
+      "kmin_fleet": {
+        "operation_min": {
+          "q05": 3.57,
+          "q10": 4.47,
+          "q25": 6.12,
+          "q50": 8.92,
+          "q75": 12.59,
+          "q90": 15.88,
+          "q95": 17.86,
+          "n": 1900,
+          "mean": 9.62
+        },
+        "stationary_all_min": {
+          "q05": 16.85,
+          "q10": 22.77,
+          "q25": 37.95,
+          "q50": 70.79,
+          "q75": 241.41,
+          "q90": 1293.3,
+          "q95": 2766.39,
+          "n": 1898,
+          "mean": 492.43
+        },
+        "stationary_daytime_min": {
+          "q05": 15.89,
+          "q10": 22.08,
+          "q25": 37.91,
+          "q50": 73.64,
+          "q75": 200.38,
+          "q90": 1314.25,
+          "q95": 1731.41,
+          "n": 1244,
+          "mean": 445.69
+        },
+        "stationary_daytime_share_ge_30min": 0.826,
+        "stationary_daytime_share_ge_60min": 0.582
+      },
+      "two_kmin_fleet": {
+        "operation_min": {
+          "q05": 3.57,
+          "q10": 4.47,
+          "q25": 6.12,
+          "q50": 8.92,
+          "q75": 12.59,
+          "q90": 15.88,
+          "q95": 17.86,
+          "n": 1900,
+          "mean": 9.62
+        },
+        "stationary_all_min": {
+          "q05": 62.72,
+          "q10": 78.93,
+          "q25": 117.31,
+          "q50": 247.58,
+          "q75": 1239.53,
+          "q90": 2941.08,
+          "q95": 4247.78,
+          "n": 1896,
+          "mean": 993.64
+        },
+        "stationary_daytime_min": {
+          "q05": 60.32,
+          "q10": 78.01,
+          "q25": 122.66,
+          "q50": 242.95,
+          "q75": 1287.19,
+          "q90": 2769.94,
+          "q95": 4330.15,
+          "n": 1242,
+          "mean": 966.37
+        },
+        "stationary_daytime_share_ge_30min": 0.998,
+        "stationary_daytime_share_ge_60min": 0.95
+      }
+    },
+    "castle-rock-pd-co": {
+      "rows_raw": 1384,
+      "rows_used": 1384,
+      "date_first": "2025-07-31",
+      "date_last": "2026-09-02",
+      "source": {
+        "flock_aerodome": 1384
+      },
+      "fleet_lower_bound_kmin": 2,
+      "share_consecutive_flights_overlapping": 0.039,
+      "agency_level_gap_min": {
+        "q05": 1.02,
+        "q10": 2.81,
+        "q25": 10.3,
+        "q50": 45.26,
+        "q75": 201.64,
+        "q90": 1208.74,
+        "q95": 2428.19,
+        "n": 1329,
+        "mean": 416.6
+      },
+      "kmin_fleet": {
+        "operation_min": {
+          "q05": 2.46,
+          "q10": 4.14,
+          "q25": 9.0,
+          "q50": 14.06,
+          "q75": 20.06,
+          "q90": 24.36,
+          "q95": 25.79,
+          "n": 1384,
+          "mean": 14.38
+        },
+        "stationary_all_min": {
+          "q05": 20.53,
+          "q10": 29.4,
+          "q25": 58.73,
+          "q50": 153.88,
+          "q75": 1132.44,
+          "q90": 2525.45,
+          "q95": 3973.85,
+          "n": 1382,
+          "mean": 801.65
+        },
+        "stationary_daytime_min": {
+          "q05": 20.64,
+          "q10": 29.38,
+          "q25": 54.48,
+          "q50": 116.22,
+          "q75": 305.36,
+          "q90": 1553.5,
+          "q95": 2930.3,
+          "n": 831,
+          "mean": 599.71
+        },
+        "stationary_daytime_share_ge_30min": 0.893,
+        "stationary_daytime_share_ge_60min": 0.721
+      },
+      "two_kmin_fleet": {
+        "operation_min": {
+          "q05": 2.46,
+          "q10": 4.14,
+          "q25": 9.0,
+          "q50": 14.06,
+          "q75": 20.06,
+          "q90": 24.36,
+          "q95": 25.79,
+          "n": 1384,
+          "mean": 14.38
+        },
+        "stationary_all_min": {
+          "q05": 82.46,
+          "q10": 111.65,
+          "q25": 191.46,
+          "q50": 1175.2,
+          "q75": 2297.78,
+          "q90": 4239.45,
+          "q95": 5576.29,
+          "n": 1380,
+          "mean": 1606.14
+        },
+        "stationary_daytime_min": {
+          "q05": 78.08,
+          "q10": 103.05,
+          "q25": 158.94,
+          "q50": 364.58,
+          "q75": 1536.98,
+          "q90": 3486.41,
+          "q95": 4469.05,
+          "n": 829,
+          "mean": 1296.99
+        },
+        "stationary_daytime_share_ge_30min": 0.999,
+        "stationary_daytime_share_ge_60min": 0.983
+      }
+    },
+    "cspd-real-time-crime-center": {
+      "rows_raw": 10450,
+      "rows_used": 10441,
+      "date_first": "2025-09-21",
+      "date_last": "2026-09-04",
+      "source": {
+        "skydio_arcgis": 10441
+      },
+      "fleet_lower_bound_kmin": 4,
+      "share_consecutive_flights_overlapping": 0.297,
+      "agency_level_gap_min": {
+        "q05": 1.16,
+        "q10": 2.24,
+        "q25": 6.34,
+        "q50": 16.38,
+        "q75": 35.15,
+        "q90": 69.88,
+        "q95": 106.41,
+        "n": 7343,
+        "mean": 54.75
+      },
+      "kmin_fleet": {
+        "operation_min": {
+          "q05": 3.97,
+          "q10": 5.47,
+          "q25": 7.91,
+          "q50": 11.28,
+          "q75": 14.67,
+          "q90": 17.24,
+          "q95": 18.5,
+          "n": 10441,
+          "mean": 11.3
+        },
+        "stationary_all_min": {
+          "q05": 25.55,
+          "q10": 33.5,
+          "q25": 51.32,
+          "q50": 81.28,
+          "q75": 134.11,
+          "q90": 218.15,
+          "q95": 292.26,
+          "n": 10437,
+          "mean": 152.28
+        },
+        "stationary_daytime_min": {
+          "q05": 27.66,
+          "q10": 37.0,
+          "q25": 58.86,
+          "q50": 93.12,
+          "q75": 156.49,
+          "q90": 249.01,
+          "q95": 316.83,
+          "n": 6332,
+          "mean": 181.77
+        },
+        "stationary_daytime_share_ge_30min": 0.938,
+        "stationary_daytime_share_ge_60min": 0.741
+      },
+      "two_kmin_fleet": {
+        "operation_min": {
+          "q05": 3.97,
+          "q10": 5.47,
+          "q25": 7.91,
+          "q50": 11.28,
+          "q75": 14.67,
+          "q90": 17.24,
+          "q95": 18.5,
+          "n": 10441,
+          "mean": 11.3
+        },
+        "stationary_all_min": {
+          "q05": 81.79,
+          "q10": 97.75,
+          "q25": 130.53,
+          "q50": 184.82,
+          "q75": 282.85,
+          "q90": 412.49,
+          "q95": 535.98,
+          "n": 10433,
+          "mean": 287.74
+        },
+        "stationary_daytime_min": {
+          "q05": 91.34,
+          "q10": 108.02,
+          "q25": 148.64,
+          "q50": 211.42,
+          "q75": 317.7,
+          "q90": 437.18,
+          "q95": 544.85,
+          "n": 6328,
+          "mean": 326.75
+        },
+        "stationary_daytime_share_ge_30min": 1.0,
+        "stationary_daytime_share_ge_60min": 0.995
+      }
+    }
+  }
+}
