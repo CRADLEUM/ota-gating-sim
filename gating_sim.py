@@ -1,5 +1,5 @@
 """
-Gating-first OTA delivery simulation v4 (IPCCC 2026 short paper) -- MEASURED INPUTS.
+Gating-first OTA delivery simulation v4 (paper submitted to STP-CPS'27, IEEE CCNC 2027) -- MEASURED INPUTS.
 
 v4 (2026-10-08) keeps the v3 semantics (a device becomes current only when ONE
 stationary window is long enough to transfer the whole update and finish an

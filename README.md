@@ -4,7 +4,7 @@ Simulation code and artifacts for the quantitative section of a paper on over-th
 
 One file, `gating_sim.py`, produces every number in that section. `scripts/make_paper_figures.py` renders the paper's three figures from the frozen outputs in `expected/`.
 
-**Status:** accepted as a short paper at IPCCC 2026; the v4 results here feed the revised manuscript. Nothing here is peer reviewed yet.
+**Status:** submitted to the 8th International Workshop on Security Trust Privacy for Cyber-Physical Systems (STP-CPS'27) at IEEE CCNC 2027; the v4 results here are the ones the paper reports. Nothing here is peer reviewed yet.
 
 ## What the model does
 
