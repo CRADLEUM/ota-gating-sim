@@ -93,7 +93,7 @@ def t95_series(sweeps, sweep, cls, arch, numeric=True):
     return xs, ys
 
 
-def plot_t95(ax, xs, ys, color, ls, marker, label, log=False):
+def plot_t95(ax, xs, ys, color, ls, marker, label, log=False, miss_shift=None):
     """Draw a T95 curve; points that never reached the target sit above the axis
     as open markers at NOT_REACHED_Y."""
     reached = [(x, y) for x, y in zip(xs, ys) if y is not None]
@@ -102,7 +102,8 @@ def plot_t95(ax, xs, ys, color, ls, marker, label, log=False):
         ax.plot([x for x, _ in reached], [y for _, y in reached], color=color, ls=ls,
                 marker=marker, label=label, markeredgecolor="white", markeredgewidth=0.4)
     if missing:
-        ax.plot(missing, [NOT_REACHED_Y] * len(missing), ls="none", marker=marker,
+        shift = miss_shift or {}
+        ax.plot([x * shift.get(x, 1.0) for x in missing], [NOT_REACHED_Y] * len(missing), ls="none", marker=marker,
                 markerfacecolor="white", markeredgecolor=color, markeredgewidth=0.9,
                 markersize=3.6, clip_on=False)
     ax.set_ylim(0, 400)
@@ -122,13 +123,17 @@ def fig1(results, sweeps, outdir):
                             [min(1.0, m + 1.96 * s) for m, s in zip(ms, ss)],
                             color=spec["color"], alpha=0.12, lw=0)
     ax.axhline(TARGET, color="#666666", lw=0.6, ls=":")
-    ax.text(4, TARGET + 0.012, "target 0.95", fontsize=6.5, color="#444444", va="bottom")
+    # Name the target on a right-hand tick: inside the axes the text would sit on the curves.
+    tgt = ax.secondary_yaxis("right")
+    tgt.set_yticks([TARGET]); tgt.set_yticklabels(["target"])
+    tgt.tick_params(labelsize=6.5, length=2, colors="#444444")
     # T95 markers for push, read from the sweep file (not typed in).
-    for cls, ytxt in (("drone", 0.30), ("av", 0.40)):
+    # The AV label sits left of its line, clear of the legends on the right.
+    for cls, ytxt, dx, ha in (("drone", 0.30, 4, "left"), ("av", 0.45, -4, "right")):
         t = dict(sweeps[("main", cls, "centralized")])["bootstrap"]
         ax.axvline(t, color="#666666", lw=0.6, ls=":")
-        ax.text(t + 4, ytxt, "%s push\n$T_{95}$ = %d min" % (cls.upper(), t),
-                fontsize=6.5, color="#333333", va="bottom")
+        ax.text(t + dx, ytxt, "%s push\n$T_{95}$ = %d min" % ({"drone": "drone", "av": "AV"}[cls], t),
+                fontsize=6.5, color="#333333", va="bottom", ha=ha)
     ax.set_xlim(0, H_MAX); ax.set_ylim(0, 1.02)
     ax.set_xlabel("deadline after release (min)")
     ax.set_ylabel("completion rate, 4 GB update")
@@ -137,7 +142,7 @@ def fig1(results, sweeps, outdir):
                     for s in ARCH.values()]
     class_handles = [Line2D([0], [0], color="#333333", ls=CLASS_LS[c], label=CLASS[c]["label"])
                      for c in ("drone", "av")]
-    leg1 = ax.legend(handles=arch_handles, loc="lower right", bbox_to_anchor=(1.0, 0.02))
+    leg1 = ax.legend(handles=arch_handles, loc="lower right", bbox_to_anchor=(1.0, 0.11))
     ax.add_artist(leg1)
     ax.legend(handles=class_handles, loc="center right", bbox_to_anchor=(1.0, 0.66))
     fig.tight_layout(pad=0.3)
@@ -163,14 +168,16 @@ def fig2(sweeps, outdir):
     # (b) backhaul rate, centralized push
     for cls, spec in CLASS.items():
         xs, ys = t95_series(sweeps, "backhaul", cls, "centralized")
-        plot_t95(b, xs, ys, spec["color"], spec["ls"], spec["marker"], cls)
+        # Both classes miss at 5 Mbps; draw the two open markers side by side.
+        plot_t95(b, xs, ys, spec["color"], spec["ls"], spec["marker"], cls,
+                 miss_shift={5.0: {"drone": 0.86, "av": 1.16}[cls]})
     b.set_xscale("log")
     b.set_xticks([5, 28, 118, 297]); b.set_xticklabels(["5", "28", "118", "297"])
     b.minorticks_off()
-    for x, lab, y, va in ((28, "p10", 10, "bottom"), (118, "sat", 10, "bottom"),
-                          (137, "rural", 330, "top"), (297, "metro", 10, "bottom")):
+    for x, lab, ha in ((28, "p10", "right"), (118, "sat", "right"),
+                       (137, "rural", "left"), (297, "metro", "right")):
         b.axvline(x, color="#AAAAAA", lw=0.5, ls=":")
-        b.text(x, y, lab, rotation=90, fontsize=5.2, color="#666666", ha="right", va=va)
+        b.text(x, 350, lab, rotation=90, fontsize=5.2, color="#666666", ha=ha, va="top")
     b.set_title("(b) backhaul rate", loc="left", **small)
     b.set_xlabel("backhaul (Mbps)", **small)
 
@@ -193,7 +200,11 @@ def fig2(sweeps, outdir):
     d.set_title("(d) reach, AV", loc="left", **small)
     d.set_xlabel("share of stops with staging", **small)
     d.set_xticks([0, 0.5, 1.0])
-    d.legend(loc="lower left", fontsize=6, handlelength=1.6)
+    # Label the lines directly: a legend box here would cover the 297 Mbps line.
+    lab = dict(fontsize=5.6, va="center")
+    d.text(0.98, 330, "depot only", color=ARCH["depot"]["color"], ha="right", **lab)
+    d.text(0.02, 278, "hybrid, 28 Mbps", color=ARCH["hybrid"]["color"], ha="left", **lab)
+    d.text(0.02, 122, "hybrid, 297 Mbps", color=ARCH["hybrid"]["color"], ha="left", **lab)
 
     for ax in (a, b, c, d):
         ax.tick_params(labelsize=6.5)
